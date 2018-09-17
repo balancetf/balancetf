@@ -1,0 +1,8 @@
+[book]
+title = "tf-rebalance"
+authors = ["TristenMilk", "rrredface"]
+description = "A collection of ideas for balance changes in TF2"
+src = "src"
+
+[build]
+build-dir = "docs"
