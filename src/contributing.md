@@ -32,7 +32,13 @@ If it already exists, just copy the line that has `###Contributor` and everythin
 You're also welcome to contribute additional information about the item's statistics, just include where you got that information from if it's not already cited.
 ```markdown
 # Item Name
-item's current statistics. grab any statistics you can find from the TF wiki, and cite it as your source as follows:
+item's current statistics. grab any statistics you can find from the TF wiki, like so:
+##### Category
+
+Stat1: Value
+
+Stat2: Value
+...etc
 
 *Source: [TF Wiki](url of that item's wiki page)*
 
@@ -42,12 +48,16 @@ item's current statistics. grab any statistics you can find from the TF wiki, an
 ## Disputed Changes
 ### Contributor
 your username
-### Changes
+
+### Changes from Stock
 any statistics that are different from stock
+
 ### Current Problems
 why you think the item needs to be changed
+
 ### Explanation of Changes
 why you think your changes will benefit the game
+
 ### Additional Comments
 this section is optional, it's just for information that doesn't fit anywhere else.
 ```
@@ -64,7 +74,7 @@ item name
 Your username:
 the username you'd like to be credited with for your idea.
 
-Changes:
+Changes from Stock:
 explain what about your idea is different from stock
 
 Current Problems:
