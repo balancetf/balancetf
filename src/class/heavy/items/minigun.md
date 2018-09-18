@@ -64,7 +64,7 @@ Burst time is the amount of time that it takes for all bullets in a burst to be 
 ### Current Problems
 A lot of the skill involved in TF2 involves the complex and dynamic relationship between movement and aim. The Heavy is the only class that directly segregates these two features with the Windup mechanic on the Heavy's Minigun - from the time when windup starts to when the minigun is unwound, the player's movement speed is significantly slowed. The Minigun is also designed around random spread in order to reduce the effective range of the weapon, instead of relying on damage fall off and the player's ability to track when aiming.
 
-Overall it seems that the the Heavy is a complete contradiction to the design of the rest of the classes.
+Overall it seems that the the Heavy is a complete contradiction to the design of the rest of the classes, as it pertains to movement.
 
 ### Explanation of Changes
 Removing the decoupling between movement and fighting, by removing the wind up mechanic, should introduce a healthier relationship between movement and fighting for this class. The overall damage output of the class has been reduced significantly, but the opportunities where the class can output damage have been increased significantly. The weapon still shoots a stream of bullets, but only for a short period of time, and with a delay between each burst of bullets. This inherently rewards players who have good aim and can reliably track their targets.
