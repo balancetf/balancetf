@@ -27,6 +27,8 @@
 
         <!-- Custom theme stylesheets -->
         
+        <link rel="stylesheet" href="css/custom.css">
+        
 
         
     </head>
@@ -72,7 +74,7 @@
         </script>
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
-            <ol class="chapter"><li class="affix"><a href="index.html">Foreword</a></li><li class="affix"><a href="contributing.html" class="active">Contributing</a></li><li><a href="class/classes.html"><strong aria-hidden="true">1.</strong> Classes</a></li><li><ol class="section"><li><a href="class/scout/scout.html"><strong aria-hidden="true">1.1.</strong> Scout</a></li><li><a href="class/soldier/soldier.html"><strong aria-hidden="true">1.2.</strong> Soldier</a></li><li><a href="class/pyro/pyro.html"><strong aria-hidden="true">1.3.</strong> Pyro</a></li><li><a href="class/demo/demo.html"><strong aria-hidden="true">1.4.</strong> Demoman</a></li><li><a href="class/heavy/heavy.html"><strong aria-hidden="true">1.5.</strong> Heavy</a></li><li><a href="class/engi/engi.html"><strong aria-hidden="true">1.6.</strong> Engineer</a></li><li><a href="class/medic/medic.html"><strong aria-hidden="true">1.7.</strong> Medic</a></li><li><a href="class/sniper/sniper.html"><strong aria-hidden="true">1.8.</strong> Sniper</a></li><li><ol class="section"><li><a href="class/sniper/items/sleeper.html"><strong aria-hidden="true">1.8.1.</strong> Sydney Sleeper</a></li></ol></li><li><a href="class/spy/spy.html"><strong aria-hidden="true">1.9.</strong> Spy</a></li><li><a href="class/allclass/allclass.html"><strong aria-hidden="true">1.10.</strong> All Class</a></li></ol></li></ol>
+            <ol class="chapter"><li class="affix"><a href="index.html">Foreword</a></li><li class="affix"><a href="contributing.html" class="active">Contributing</a></li><li><a href="global.html"><strong aria-hidden="true">1.</strong> Global Changes</a></li><li><a href="class/classes.html"><strong aria-hidden="true">2.</strong> Classes</a></li><li><ol class="section"><li><a href="class/scout/scout.html"><strong aria-hidden="true">2.1.</strong> Scout</a></li><li><a href="class/soldier/soldier.html"><strong aria-hidden="true">2.2.</strong> Soldier</a></li><li><a href="class/pyro/pyro.html"><strong aria-hidden="true">2.3.</strong> Pyro</a></li><li><a href="class/demo/demo.html"><strong aria-hidden="true">2.4.</strong> Demoman</a></li><li><a href="class/heavy/heavy.html"><strong aria-hidden="true">2.5.</strong> Heavy</a></li><li><ol class="section"><li><a href="class/heavy/items/minigun.html"><strong aria-hidden="true">2.5.1.</strong> Minigun</a></li></ol></li><li><a href="class/engi/engi.html"><strong aria-hidden="true">2.6.</strong> Engineer</a></li><li><a href="class/medic/medic.html"><strong aria-hidden="true">2.7.</strong> Medic</a></li><li><a href="class/sniper/sniper.html"><strong aria-hidden="true">2.8.</strong> Sniper</a></li><li><ol class="section"><li><a href="class/sniper/items/sleeper.html"><strong aria-hidden="true">2.8.1.</strong> Sydney Sleeper</a></li></ol></li><li><a href="class/spy/spy.html"><strong aria-hidden="true">2.9.</strong> Spy</a></li><li><a href="class/multiclass/multiclass.html"><strong aria-hidden="true">2.10.</strong> Multi Class</a></li><li><ol class="section"><li><a href="class/multiclass/items/pistol.html"><strong aria-hidden="true">2.10.1.</strong> Pistol</a></li></ol></li></ol></li></ol>
         </nav>
 
         <div id="page-wrapper" class="page-wrapper">
@@ -157,10 +159,12 @@
 </li>
 </ul>
 <a class="header" href="#pull-requests" id="pull-requests"><h2>Pull Requests</h2></a>
-<p>This is the most helpful method of contributing as it means that we don't have to manually put your idea into the format of this document. However, it is not necessary. If you're not comfortable with making PRs, you can skip this section and read <a href="#issues">Issues</a>.</p>
+<p>This is the most helpful method of contributing as it means that we don't have to manually put your idea into the format of this document. However, it is not necessary. If you're not comfortable with making PRs, you can skip this section and read <a href="#issues">Issues</a>. Otherwise, it's best to be familiar with <a href="https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf">Github Markdown</a>.</p>
 <a class="header" href="#template" id="template"><h3>Template</h3></a>
 <p>There is a very particular format we're trying to adhere to, so when making PRs, please use the following template.</p>
-<p>If you're making a contribution to a file that doesn't yet exist, copy the whole template. The filename can be anything as long as it makes sense and ends with <code>.md</code>. Make sure it's in the right folder. You will also need to add a reference to that file to the <code>SUMMARY.md</code> file in the <code>src</code> directory. The format is simple:</p>
+<p>If you're making a contribution to a file that doesn't yet exist, copy the whole template. The filename can be anything as long as it makes sense and ends with <code>.md</code>. Make sure it's in the right folder.</p>
+<p>For item statistics, please use tables as shown in the template. If you're a bit lazy you can use this <a href="https://ozh.github.io/ascii-tables/">table generator</a>. Just make sure you have the output style set to Github Markdown.</p>
+<p>You will also need to add a reference to the new file to the <code>SUMMARY.md</code> file in the <code>src</code> directory. The format is simple:</p>
 <pre><code class="language-markdown">[Chapter Title](relative/path/to/file.md)
 </code></pre>
 <p>Sub-chapters should be sorted alphabetically.</p>
@@ -169,7 +173,15 @@
 <p><strong>Always</strong> put your idea under the Disputed Changes section.</p>
 <p>You're also welcome to contribute additional information about the item's statistics, just include where you got that information from if it's not already cited.</p>
 <pre><code class="language-markdown"># Item Name
-item's current statistics. grab any statistics you can find from the TF wiki, and cite it as your source as follows:
+item's current statistics. grab any statistics you can find from the TF wiki, like so:
+| Damage                  |        |
+|-------------------------|-------:|
+| Type                    | Bullet |
+| Base (uncharged)        |     50 |
+| Crit (uncharged)        |    150 |
+| Mini-crit (uncharged)   |     68 |
+...etc
+your table doesn't have to look this nice, but it would be nice. it is much easier if you use a table generator like the one linked above
 
 *Source: [TF Wiki](url of that item's wiki page)*
 
@@ -179,15 +191,20 @@ item's current statistics. grab any statistics you can find from the TF wiki, an
 ## Disputed Changes
 ### Contributor
 your username
-### Changes
+
+### Changes from Stock
 any statistics that are different from stock
+
 ### Current Problems
 why you think the item needs to be changed
+
 ### Explanation of Changes
 why you think your changes will benefit the game
+
 ### Additional Comments
 this section is optional, it's just for information that doesn't fit anywhere else.
 </code></pre>
+<p>Once you've got this all filled out, it's good to run it through a <a href="https://jbt.github.io/markdown-editor/">markdown preview</a> to make sure there aren't any glaring formatting issues.</p>
 <a class="header" href="#issues" id="issues"><h2>Issues</h2></a>
 <p>If you're not comfortable with pull requests, that's fine. You can just <a href="https://github.com/phxvyper/tf-rebalance/issues/new">open an issue</a> and fill out the template below.</p>
 <pre><code>Item Name:
@@ -196,7 +213,7 @@ item name
 Your username:
 the username you'd like to be credited with for your idea.
 
-Changes:
+Changes from Stock:
 explain what about your idea is different from stock
 
 Current Problems:
@@ -220,7 +237,7 @@ anything else you want to say that doesn't fit into the above sections. this is 
                         
 
                         
-                            <a rel="next" href="class/classes.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next" href="global.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
                         
@@ -238,7 +255,7 @@ anything else you want to say that doesn't fit into the above sections. this is 
                 
 
                 
-                    <a href="class/classes.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a href="global.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
                 
