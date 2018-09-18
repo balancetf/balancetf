@@ -6,3 +6,6 @@ src = "src"
 
 [build]
 build-dir = "docs"
+
+[output.html]
+additional-css = ["css/custom.css"]
