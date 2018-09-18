@@ -3,6 +3,7 @@
 [Foreword](README.md)
 [Contributing](contributing.md)
 
+- [Global Changes](global.md)
 - [Classes](class/classes.md)
     - [Scout](class/scout/scout.md)
     - [Soldier](class/soldier/soldier.md)
@@ -14,5 +15,5 @@
     - [Sniper](class/sniper/sniper.md)
         - [Sydney Sleeper](class/sniper/items/sleeper.md)
     - [Spy](class/spy/spy.md)
-    - [All Class](class/allclass/allclass.md)
-    
+    - [Multi Class](class/multiclass/multiclass.md)
+        - [Pistol](class/multiclass/items/pistol.md)
