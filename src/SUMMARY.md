@@ -9,6 +9,7 @@
     - [Pyro](class/pyro/pyro.md)
     - [Demoman](class/demo/demo.md)
     - [Heavy](class/heavy/heavy.md)
+        - [Minigun](class/heavy/items/minigun.md)
     - [Engineer](class/engi/engi.md)
     - [Medic](class/medic/medic.md)
     - [Sniper](class/sniper/sniper.md)
