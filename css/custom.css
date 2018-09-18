@@ -1,0 +1,8 @@
+table {
+    width: 100%;
+    margin: 5px 0 5px 0;
+}
+
+table thead {
+    text-align: left;
+}

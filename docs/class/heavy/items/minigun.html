@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Sydney Sleeper - tf-rebalance</title>
+        <title>Minigun - tf-rebalance</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="A collection of ideas for balance changes in TF2">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -74,7 +74,7 @@
         </script>
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
-            <ol class="chapter"><li class="affix"><a href="../../../index.html">Foreword</a></li><li class="affix"><a href="../../../contributing.html">Contributing</a></li><li><a href="../../../global.html"><strong aria-hidden="true">1.</strong> Global Changes</a></li><li><a href="../../../class/classes.html"><strong aria-hidden="true">2.</strong> Classes</a></li><li><ol class="section"><li><a href="../../../class/scout/scout.html"><strong aria-hidden="true">2.1.</strong> Scout</a></li><li><a href="../../../class/soldier/soldier.html"><strong aria-hidden="true">2.2.</strong> Soldier</a></li><li><a href="../../../class/pyro/pyro.html"><strong aria-hidden="true">2.3.</strong> Pyro</a></li><li><a href="../../../class/demo/demo.html"><strong aria-hidden="true">2.4.</strong> Demoman</a></li><li><a href="../../../class/heavy/heavy.html"><strong aria-hidden="true">2.5.</strong> Heavy</a></li><li><ol class="section"><li><a href="../../../class/heavy/items/minigun.html"><strong aria-hidden="true">2.5.1.</strong> Minigun</a></li></ol></li><li><a href="../../../class/engi/engi.html"><strong aria-hidden="true">2.6.</strong> Engineer</a></li><li><a href="../../../class/medic/medic.html"><strong aria-hidden="true">2.7.</strong> Medic</a></li><li><a href="../../../class/sniper/sniper.html"><strong aria-hidden="true">2.8.</strong> Sniper</a></li><li><ol class="section"><li><a href="../../../class/sniper/items/sleeper.html" class="active"><strong aria-hidden="true">2.8.1.</strong> Sydney Sleeper</a></li></ol></li><li><a href="../../../class/spy/spy.html"><strong aria-hidden="true">2.9.</strong> Spy</a></li><li><a href="../../../class/multiclass/multiclass.html"><strong aria-hidden="true">2.10.</strong> Multi Class</a></li><li><ol class="section"><li><a href="../../../class/multiclass/items/pistol.html"><strong aria-hidden="true">2.10.1.</strong> Pistol</a></li></ol></li></ol></li></ol>
+            <ol class="chapter"><li class="affix"><a href="../../../index.html">Foreword</a></li><li class="affix"><a href="../../../contributing.html">Contributing</a></li><li><a href="../../../global.html"><strong aria-hidden="true">1.</strong> Global Changes</a></li><li><a href="../../../class/classes.html"><strong aria-hidden="true">2.</strong> Classes</a></li><li><ol class="section"><li><a href="../../../class/scout/scout.html"><strong aria-hidden="true">2.1.</strong> Scout</a></li><li><a href="../../../class/soldier/soldier.html"><strong aria-hidden="true">2.2.</strong> Soldier</a></li><li><a href="../../../class/pyro/pyro.html"><strong aria-hidden="true">2.3.</strong> Pyro</a></li><li><a href="../../../class/demo/demo.html"><strong aria-hidden="true">2.4.</strong> Demoman</a></li><li><a href="../../../class/heavy/heavy.html"><strong aria-hidden="true">2.5.</strong> Heavy</a></li><li><ol class="section"><li><a href="../../../class/heavy/items/minigun.html" class="active"><strong aria-hidden="true">2.5.1.</strong> Minigun</a></li></ol></li><li><a href="../../../class/engi/engi.html"><strong aria-hidden="true">2.6.</strong> Engineer</a></li><li><a href="../../../class/medic/medic.html"><strong aria-hidden="true">2.7.</strong> Medic</a></li><li><a href="../../../class/sniper/sniper.html"><strong aria-hidden="true">2.8.</strong> Sniper</a></li><li><ol class="section"><li><a href="../../../class/sniper/items/sleeper.html"><strong aria-hidden="true">2.8.1.</strong> Sydney Sleeper</a></li></ol></li><li><a href="../../../class/spy/spy.html"><strong aria-hidden="true">2.9.</strong> Spy</a></li><li><a href="../../../class/multiclass/multiclass.html"><strong aria-hidden="true">2.10.</strong> Multi Class</a></li><li><ol class="section"><li><a href="../../../class/multiclass/items/pistol.html"><strong aria-hidden="true">2.10.1.</strong> Pistol</a></li></ol></li></ol></li></ol>
         </nav>
 
         <div id="page-wrapper" class="page-wrapper">
@@ -138,72 +138,80 @@
 
                 <div id="content" class="content">
                     <main>
-                        <a class="header" href="#sydney-sleeper" id="sydney-sleeper"><h1>Sydney Sleeper</h1></a>
+                        <a class="header" href="#minigun" id="minigun"><h1>Minigun</h1></a>
 <table><thead><tr><th> Misc               </th><th align="right">         </th></tr></thead><tbody>
 <tr><td> Hitscan/Projectile </td><td align="right"> Hitscan </td></tr>
 <tr><td> Ranged/Melee       </td><td align="right">  Ranged </td></tr>
-<tr><td> Effect             </td><td align="right">  Jarate </td></tr>
+<tr><td> Ammo Reserve       </td><td align="right">     200 </td></tr>
+<tr><td> Windup move speed  </td><td align="right">     47% </td></tr>
 </tbody></table>
-<table><thead><tr><th> Damage                  </th><th>        </th></tr></thead><tbody>
-<tr><td> Type                    </td><td align="right"> Bullet </td></tr>
-<tr><td> Base (uncharged)        </td><td align="right">     50 </td></tr>
-<tr><td> Crit (uncharged)        </td><td align="right">    150 </td></tr>
-<tr><td> Mini-crit (uncharged)   </td><td align="right">     68 </td></tr>
-<tr><td> Base (full charge)      </td><td align="right">    150 </td></tr>
-<tr><td> Crit (full charge)      </td><td align="right">    450 </td></tr>
-<tr><td> Mini-crit (full charge) </td><td align="right">    203 </td></tr>
+<table><thead><tr><th> Damage                  </th><th>                </th></tr></thead><tbody>
+<tr><td> Type                    </td><td align="right">         Bullet </td></tr>
+<tr><td> Max rampup (150%)       </td><td align="right">  13.5 / bullet </td></tr>
+<tr><td> Base damage (100%)      </td><td align="right">     9 / bullet </td></tr>
+<tr><td> Max falloff (50%)       </td><td align="right">   4.5 / bullet </td></tr>
+<tr><td> Crit                    </td><td align="right">    27 / bullet </td></tr>
+<tr><td> Mini-crit               </td><td align="right"> 12-18 / bullet </td></tr>
 </tbody></table>
-<table><thead><tr><th> Function Times                </th><th>      </th></tr></thead><tbody>
-<tr><td> Attack Interval               </td><td align="right"> 1.5s </td></tr>
-<tr><td> Effect Duration (uncharged)   </td><td align="right">   2s </td></tr>
-<tr><td> Effect Duration (full charge) </td><td align="right">   8s </td></tr>
-<tr><td> Time to fully charge          </td><td align="right"> 2.8s </td></tr>
-<tr><td> Zoom-in Charge Delay          </td><td align="right"> 1.3s </td></tr>
+<table><thead><tr><th> Function Times          </th><th>                </th></tr></thead><tbody>
+<tr><td> Attack interval         </td><td align="right">    0.1 seconds </td></tr>
+<tr><td> Windup time             </td><td align="right">   0.87 seconds </td></tr>
 </tbody></table>
-<p><em>Source: <a href="https://wiki.teamfortress.com/wiki/Sydney_Sleeper">TF Wiki</a></em></p>
+<p><em>Source: <a href="https://wiki.teamfortress.com/wiki/Minigun">TF Wiki</a></em></p>
 <a class="header" href="#proposed-change" id="proposed-change"><h2>Proposed Change</h2></a>
 <p>...</p>
 <a class="header" href="#disputed-changes" id="disputed-changes"><h2>Disputed Changes</h2></a>
 <a class="header" href="#contributor" id="contributor"><h3>Contributor</h3></a>
-<p>rrredface</p>
-<a class="header" href="#changes-from-stock" id="changes-from-stock"><h4>Changes from Stock</h4></a>
+<p>tristenmilk</p>
+<a class="header" href="#changes-from-stock" id="changes-from-stock"><h3>Changes from Stock</h3></a>
+<p>Completely replace the minigun with a Burstgun:</p>
 <ul>
-<li>This weapon cannot charge.</li>
-<li>Headshotting enemies will build up a meter that allows the sniper to shoot his teammates to heal them.
-<ul>
-<li>This meter has a maximum value of 300.</li>
-<li>Each headshot adds 150 to this meter.</li>
-<li>Teammates are healed at half the rate enemies are damaged, e.g. bodyshots heal teammates for 25 HP, headshots heal for 75 HP.</li>
-<li>Healing teammates depletes meter equal to the amount of health healed.</li>
-<li>This cannot overheal teammates.</li>
+<li><strong>This weapon fires in bursts.</strong></li>
 </ul>
-</li>
-</ul>
-<a class="header" href="#current-problems" id="current-problems"><h4>Current Problems</h4></a>
-<p>Currently, I feel it's too easy to be effective with the Sydney Sleeper without hitting headshots because of the weapon's increased charge rate compared to stock and its jarate effect. Additionally, because it applies jarate, it allows the sniper to stand outside the effective range of other classes and effectively increase the effective range of his own teammates, as mini-crits ignore damage falloff. As a result, I feel it's too easy for a sniper to do 150 damage without any potential for retaliation, and also make it significantly more difficult to escape after the damage is done.</p>
-<a class="header" href="#explanation-of-changes" id="explanation-of-changes"><h4>Explanation of Changes</h4></a>
-<p>It seems clear that the TF team wants this rifle to fill a support niche. I feel that my proposed changes would reward skilled players for hitting headshots more than the current design, and not do so by applying an arguably unfun effect to the enemy, but by allowing him to help his teammates. One might be concerned about the fact that a sniper can slightly more than double the healing rate of a medi gun on an in-combat patient. I think that this benefit is sufficiently offset by the following factors:</p>
-<ul>
-<li>The weapon cannot overheal like the medi gun can.</li>
-<li>This healing rate is not sustainable over long periods, as the sniper's healing pool is limited until he headshots more enemies.</li>
-<li>The sniper has to hit headshots on his teammates to achieve this, which is significantly more difficult than holding a beam on them.</li>
-</ul>
-<p>Additionally, in the current state of 6v6 TF2, the sniper is mostly used for the purpose of breaking stalemates. However, unless the sniper is incredibly skilled, he usually doesn't see much use beyond getting one or two picks for his team to agress off of. I think this would give the sniper more use in team fights.</p>
-<a class="header" href="#additional-comments" id="additional-comments"><h4>Additional Comments</h4></a>
-<p>During some discussion of this idea, it was brought up that it might be quite annoying to be fighting a player who gets unexpectedly healed for up to 75 HP by a sniper mid-fight. I don't think this is a major issue, however, as it would be very easy to keep track of exactly how much meter the sniper has, since it's very easy to keep track of when an enemy sniper hits headshots.</p>
+<table><thead><tr><th> Misc               </th><th>         </th></tr></thead><tbody>
+<tr><td> Hitscan/Projectile </td><td align="right"> Hitscan </td></tr>
+<tr><td> Ranged/Melee       </td><td align="right">  Ranged </td></tr>
+<tr><td> Ammo per burst     </td><td align="right">       1 </td></tr>
+<tr><td> Bullets per burst  </td><td align="right">       4 </td></tr>
+<tr><td> Clip size          </td><td align="right">       6 </td></tr>
+<tr><td> Ammo reserve       </td><td align="right">      36 </td></tr>
+</tbody></table>
+<table><thead><tr><th> Damage                  </th><th>                </th></tr></thead><tbody>
+<tr><td> Type                    </td><td align="right">         Bullet </td></tr>
+<tr><td> Max rampup (150%)       </td><td align="right">  17.5 / bullet </td></tr>
+<tr><td> Base damage (100%)      </td><td align="right">    11 / bullet </td></tr>
+<tr><td> Max falloff (50%)       </td><td align="right">   5.5 / bullet </td></tr>
+<tr><td> Crit                    </td><td align="right">    33 / bullet </td></tr>
+</tbody></table>
+<table><thead><tr><th> Function Times          </th><th>                </th></tr></thead><tbody>
+<tr><td> Attack interval         </td><td align="right">    0.3 seconds </td></tr>
+<tr><td> Burst time              </td><td align="right">   0.45 seconds </td></tr>
+<tr><td> Reload (first)          </td><td align="right">   0.75 seconds </td></tr>
+<tr><td> Reload (consecutive)    </td><td align="right">   0.55 seconds </td></tr>
+</tbody></table>
+<p>Notes:
+Burst time is the amount of time that it takes for all bullets in a burst to be fired consecutively. Meaning that each bullet has an intermediate interval of <code>x ÷ n</code> where x is Burst time and n is the number of bullets fired.</p>
+<a class="header" href="#current-problems" id="current-problems"><h3>Current Problems</h3></a>
+<p>A lot of the skill involved in TF2 involves the complex and dynamic relationship between movement and aim. The Heavy is the only class that directly segregates these two features with the Windup mechanic on the Heavy's Minigun - from the time when windup starts to when the minigun is unwound, the player's movement speed is significantly slowed. The Minigun is also designed around random spread in order to reduce the effective range of the weapon, instead of relying on damage fall off and the player's ability to track when aiming.</p>
+<p>Overall it seems that the the Heavy is a complete contradiction to the design of the rest of the classes, as it pertains to movement.</p>
+<a class="header" href="#explanation-of-changes" id="explanation-of-changes"><h3>Explanation of Changes</h3></a>
+<p>Removing the decoupling between movement and fighting, by removing the wind up mechanic, should introduce a healthier relationship between movement and fighting for this class. The overall damage output of the class has been reduced significantly, but the opportunities where the class can output damage have been increased significantly. The weapon still shoots a stream of bullets, but only for a short period of time, and with a delay between each burst of bullets. This inherently rewards players who have good aim and can reliably track their targets.</p>
+<a class="header" href="#additional-comments" id="additional-comments"><h3>Additional Comments</h3></a>
+<p>Originally, when designing this weapon, there was an additional mechanic called &quot;Vulnerability&quot; which would replace the ramp-up/fall-off of the Burstgun. Instead, all players had &quot;Vulnerability&quot; stat which starts at 0.5 by default. Damage caused by the Burstgun would increase the player's vulnerability by a proportional amount, capping off at 1.5. Vulnerability decreases back down to 0.5 over time. The damage done to players by the Burstgun would be multiplied by the effected players Vulnerability before being applied to the player.</p>
+<p>I decided to scrap this mechanic. It was originally intended to further promote players who could track and aim effectively; but, in the end, I think it was too complicated and that a simpler solution was in order - which is what the current proposed changes are a conclusion to.</p>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
                         
-                            <a rel="prev" href="../../../class/sniper/sniper.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="../../../class/heavy/heavy.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
                         
 
                         
-                            <a rel="next" href="../../../class/spy/spy.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next" href="../../../class/engi/engi.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
                         
@@ -215,13 +223,13 @@
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
                 
-                    <a href="../../../class/sniper/sniper.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a href="../../../class/heavy/heavy.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
                 
 
                 
-                    <a href="../../../class/spy/spy.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a href="../../../class/engi/engi.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
                 
