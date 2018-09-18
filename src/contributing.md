@@ -11,13 +11,17 @@ Whether you want to contribute via PR or issue, there are some guidelines that s
 
 ## Pull Requests
 
-This is the most helpful method of contributing as it means that we don't have to manually put your idea into the format of this document. However, it is not necessary. If you're not comfortable with making PRs, you can skip this section and read [Issues](#issues).
+This is the most helpful method of contributing as it means that we don't have to manually put your idea into the format of this document. However, it is not necessary. If you're not comfortable with making PRs, you can skip this section and read [Issues](#issues). Otherwise, it's best to be familiar with [Github Markdown](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf).
 
 ### Template
 
 There is a very particular format we're trying to adhere to, so when making PRs, please use the following template.
 
-If you're making a contribution to a file that doesn't yet exist, copy the whole template. The filename can be anything as long as it makes sense and ends with `.md`. Make sure it's in the right folder. You will also need to add a reference to that file to the `SUMMARY.md` file in the `src` directory. The format is simple:
+If you're making a contribution to a file that doesn't yet exist, copy the whole template. The filename can be anything as long as it makes sense and ends with `.md`. Make sure it's in the right folder.
+
+For item statistics, please use tables as shown in the template. If you're a bit lazy you can use this [table generator](https://ozh.github.io/ascii-tables/). Just make sure you have the output style set to Github Markdown.
+
+You will also need to add a reference to the new file to the `SUMMARY.md` file in the `src` directory. The format is simple:
 ```markdown
 [Chapter Title](relative/path/to/file.md)
 ```
@@ -33,12 +37,14 @@ You're also welcome to contribute additional information about the item's statis
 ```markdown
 # Item Name
 item's current statistics. grab any statistics you can find from the TF wiki, like so:
-##### Category
-
-Stat1: Value
-
-Stat2: Value
+| Damage                  |        |
+|-------------------------|-------:|
+| Type                    | Bullet |
+| Base (uncharged)        |     50 |
+| Crit (uncharged)        |    150 |
+| Mini-crit (uncharged)   |     68 |
 ...etc
+your table doesn't have to look this nice, but it would be nice. it is much easier if you use a table generator like the one linked above
 
 *Source: [TF Wiki](url of that item's wiki page)*
 
@@ -61,7 +67,7 @@ why you think your changes will benefit the game
 ### Additional Comments
 this section is optional, it's just for information that doesn't fit anywhere else.
 ```
-
+Once you've got this all filled out, it's good to run it through a [markdown preview](https://jbt.github.io/markdown-editor/) to make sure there aren't any glaring formatting issues.
 
 ## Issues
 
