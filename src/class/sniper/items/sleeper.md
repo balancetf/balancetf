@@ -1,39 +1,28 @@
 # Sydney Sleeper
 
-##### Hitscan/Projectile
-Hitscan
+| Misc               |         |
+|--------------------|--------:|
+| Hitscan/Projectile | Hitscan |
+| Ranged/Melee       |  Ranged |
+| Effect             |  Jarate |
 
-##### Ranged/Melee
-Ranged
+| Damage                  |        |
+|-------------------------|-------:|
+| Type                    | Bullet |
+| Base (uncharged)        |     50 |
+| Crit (uncharged)        |    150 |
+| Mini-crit (uncharged)   |     68 |
+| Base (full charge)      |    150 |
+| Crit (full charge)      |    450 |
+| Mini-crit (full charge) |    203 |
 
-##### Effect
-Jarate
-
-##### Damage
-Type: Bullet
-
-Base (uncharged): 50
-
-Crit (uncharged): 150
-
-Mini-crit (uncharged): 68
-
-Base (full charge): 150
-
-Crit (full charge): 450
-
-Mini-crit (full charge): 203
-
-##### Function Times
-Attack Interval: 1.5s
-
-Effect Duration (uncharged): 2s
-
-Effect Duration (full charge): 8s
-
-Time to fully charge: 2.8s
-
-Zoom-in Charge Delay: 1.3s
+| Function Times                |      |
+|-------------------------------|-----:|
+| Attack Interval               | 1.5s |
+| Effect Duration (uncharged)   |   2s |
+| Effect Duration (full charge) |   8s |
+| Time to fully charge          | 2.8s |
+| Zoom-in Charge Delay          | 1.3s |
 
 *Source: [TF Wiki](https://wiki.teamfortress.com/wiki/Sydney_Sleeper)*
 
