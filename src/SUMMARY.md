@@ -9,6 +9,7 @@
     - [Soldier](class/soldier/soldier.md)
     - [Pyro](class/pyro/pyro.md)
     - [Demoman](class/demo/demo.md)
+        - [Scottish Resistance](class/demo/items/Scottish.md)
     - [Heavy](class/heavy/heavy.md)
         - [Minigun](class/heavy/items/minigun.md)
     - [Engineer](class/engi/engi.md)
