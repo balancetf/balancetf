@@ -31,7 +31,7 @@
 | Activation time       | 1.72 s |
 | Maximum charge time   | 4.00 s |
 
-[TF Wiki](https://wiki.teamfortress.com/wiki/Scottish_Resistance)*
+* Scoure: [TF Wiki](https://wiki.teamfortress.com/wiki/Scottish_Resistance)*
 
 ## Proposed Change
 ...
