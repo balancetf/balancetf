@@ -13,4 +13,4 @@ The following weapons would be affected by this change:
 * [Grenade Launchers](class/demoman/demoman.md#grenade-launchers)
 * [Stickybomb Launchers](class/demoman/demoman.md#stickybomb-launchers)
 * [All Revolvers](class/spy/spy.md#revolvers)
-* [Beggar's Bazooka](class/soldier/items/beggars.md)
+* [Beggar's Bazooka](class/soldier/items/beggars-bazooka.md)
