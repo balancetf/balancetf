@@ -10,6 +10,7 @@ Since the only results of random spread are either rewarding players for missing
 The following weapons would be affected by this change:
 * [Pistol](class/multiclass/items/pistol.md)
 * [SMG](class/sniper/items/smg.md)
-* [Stickybomb Launcher](class/demoman/items/sticky.md)
+* [Grenade Launchers](class/demoman/demoman.md#grenade-launchers)
+* [Stickybomb Launchers](class/demoman/demoman.md#stickybomb-launchers)
 * [All Revolvers](class/spy/spy.md#revolvers)
 * [Beggar's Bazooka](class/soldier/items/beggars.md)
