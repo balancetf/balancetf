@@ -14,6 +14,7 @@
         - [Minigun](class/heavy/items/minigun.md)
     - [Engineer](class/engineer/engineer.md)
     - [Medic](class/medic/medic.md)
+        - [Crusader's Crossbow](class/medic/items/crusaders-crossbow.md)
         - [Syringe Gun](class/medic/items/syringe-gun.md)
         - [Vaccinator](class/medic/items/vaccinator.md)
     - [Sniper](class/sniper/sniper.md)
