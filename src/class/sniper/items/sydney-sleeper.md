@@ -35,7 +35,7 @@
 * This weapon cannot charge.
 * Headshotting enemies will build up a meter that allows the sniper to shoot his teammates to heal them.
     * This meter has a maximum value of 300.
-    * Each headshot adds 150 to this meter.
+    * Damage dealt by headshots is returned as meter. For example, a 140 damage headshot will return 140 meter.
     * Teammates are healed at half the rate enemies are damaged, e.g. bodyshots heal teammates for 25 HP, headshots heal for 75 HP.
     * Healing teammates depletes meter equal to the amount of health healed.
     * This cannot overheal teammates.
