@@ -41,7 +41,7 @@ Note: after a stickybomb has been out for 5 seconds, it is no longer affected by
 
 *Sources: [TF Wiki](https://wiki.teamfortress.com/wiki/Stickybomb_Launcher), [Exany](https://youtu.be/rUziaUJludw?t=708)*
 
-## Proposed Change
+## Approved Change
 ...
 
 ## Disputed Change #1

@@ -17,7 +17,7 @@
 
 *Source: [TF Wiki](https://wiki.teamfortress.com/wiki/Vaccinator)*
 
-## Proposed Change
+## Approved Change
 ...
 
 ## Disputed Change #1

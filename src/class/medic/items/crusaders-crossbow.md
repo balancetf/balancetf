@@ -33,7 +33,7 @@
 
 *Source: [TF Wiki](https://wiki.teamfortress.com/wiki/Crusader%27s_Crossbow)*
 
-## Proposed Change
+## Approved Change
 ...
 
 ## Disputed Change #1
@@ -52,6 +52,6 @@ Currently, the Crusader's Crossbow is simply the best item in its slot. Nothing 
 Increasing the reload time from 1.6s to 2s makes the high healing per second of the Crusader's Crossbow easier to counter with high amounts of burst damage. Even still, that puts its max heal rate at 75HP/s which is still higher than the stock medi gun at maximum crit heals. Reducing its maximum healing per arrow puts healing per second at 60HP/s, which is much more sane and possible to fight against. Maximum damage is reduced to 40 to reduce the effectiveness of spam arrows.
 
 ### Additional Comments
-This change is best looked at in context with our proposed changes to the [Blutsauger](blutsauger.md#disputed-change-1) and [Syringe Gun](syringe-gun.md#disputed-change-1) as well. They are designed to be balanced around each other.
+This change is best looked at in context with the changes to the [Blutsauger](blutsauger.md#disputed-change-1) and [Syringe Gun](syringe-gun.md#disputed-change-1) as well. They are designed to be balanced around each other.
 
 *Contributors: rrredface, tristenmilk, RibbonHeartU*
