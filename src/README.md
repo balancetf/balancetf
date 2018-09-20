@@ -9,7 +9,7 @@ It's important to remember that the maintainers are just people with opinions, s
 
 # Approved and Disputed Changes
 
-Something you'll notice throughout this document is the distinction between "Proposed" and "Disputed" changes. Essentially, for any given item, there is a theoretically unlimited number of disputed changes. This means that the change has not received signifcant enough review to be approved, or the general consensus is about that change is negative. The default state of a change is disputed. The approval process is based on 2 factors:
+Something you'll notice throughout this document is the distinction between "Approved" and "Disputed" changes. Essentially, for any given item, there is a theoretically unlimited number of disputed changes. This means that the change has not received signifcant enough review to be approved, or the general consensus is about that change is negative. The default state of a change is disputed. The approval process is based on 2 factors:
 1. Opinions of high level competitive players.
     * It stands to reason that the best players in the game are the most experienced and are therefore more qualified to judge balance changes than someone with less experience.
 2. Opinions of the community at large.
