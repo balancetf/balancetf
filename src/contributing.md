@@ -79,24 +79,5 @@ Once you've got this all filled out, it's good to run it through a [markdown pre
 
 ## Issues
 
-If you're not comfortable with pull requests, that's fine. You can just [open an issue](https://github.com/phxvyper/tf-rebalance/issues/new) and fill out the template below.
+If you're not comfortable with pull requests, that's fine. You can just [open an issue](https://github.com/phxvyper/tf-rebalance/issues/new/choose) and fill out the template labeled "New Change Proposal."
 
-```
-Item Name:
-item name
-
-Your username:
-the username you'd like to be credited with for your idea.
-
-Changes from Stock:
-explain what about your idea is different from stock
-
-Current Problems:
-why you think the item needs to be changed
-
-Explanation of Changes:
-why you think your changes will benefit the game
-
-Additional Comments:
-anything else you want to say that doesn't fit into the above sections. this is optional.
-```
