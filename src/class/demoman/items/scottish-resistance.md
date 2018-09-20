@@ -1,12 +1,12 @@
 # Scottish Resistance
 |           Misc           |            |
-|--------------------------|------------|
+|--------------------------|-----------:|
 | Shot type                | Projectile |
 | Damage type              | Explosive  |
 | Ranged or Melee damage?  | Ranged     |
 
 |         Damage          |     |
-|-------------------------|-----|
+|-------------------------|----:|
 | Maximum ramp-up (120%)  | 144 |
 | Base damage (100%)      | 120 |
 | Maximum fall-off (50%)  |  60 |
@@ -18,13 +18,13 @@
 | Mini-Crit (<3ft)        | 165 |
 
 |  Splash damage   |          |
-|------------------|----------|
+|------------------|---------:|
 | Minimum splash   | 9.1ft    |
 | Damage reduction | 1/2.92hu |
 | Self-damage      | 45-114   |
 
 |    Function times     |        |
-|-----------------------|--------|
+|-----------------------|-------:|
 | Attack interval       | 0.45 s |
 | Reload (first)        | 1.09 s |
 | Reload (consecutive)  | 0.67 s |
@@ -36,15 +36,13 @@
 ## Proposed Change
 ...
 
-## Disputed Changes
-### Contributor
-RibbonHeartU
+## Disputed Change #1
 
 ### Changes from Stock
 * +25% faster firing speed
 * +50% max secondary ammo
 * +6 max stickies out
- Detonates stickybombs near the center of your crosshair
+* Detonates stickybombs near the center of your crosshair
 * -0.8 arm time
 
 ### Current Problems
@@ -55,3 +53,5 @@ The Scottish Resistance will now only detonate stickies you are looking at. The 
 
 ### Additional Comments
 ...
+
+*Contributors: RibbonHeartU*
