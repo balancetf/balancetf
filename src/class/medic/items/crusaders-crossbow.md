@@ -33,7 +33,7 @@
 
 *Source: [TF Wiki](https://wiki.teamfortress.com/wiki/Crusader%27s_Crossbow)*
 
-## Proposed Change
+## Approved Change
 ...
 
 ## Disputed Change #1

@@ -23,7 +23,7 @@
 
 *Source: [TF Wiki](https://wiki.teamfortress.com/wiki/Minigun)*
 
-## Proposed Change
+## Approved Change
 ...
 
 ## Disputed Change #1
@@ -71,6 +71,6 @@ Removing the decoupling between movement and fighting, by removing the wind up m
 ### Additional Comments
 Originally, when designing this weapon, there was an additional mechanic called "Vulnerability" which would replace the ramp-up/fall-off of the Burstgun. Instead, all players had "Vulnerability" stat which starts at 0.5 by default. Damage caused by the Burstgun would increase the player's vulnerability by a proportional amount, capping off at 1.5. Vulnerability decreases back down to 0.5 over time. The damage done to players by the Burstgun would be multiplied by the effected players Vulnerability before being applied to the player.
 
-I decided to scrap this mechanic. It was originally intended to further promote players who could track and aim effectively; but, in the end, I think it was too complicated and that a simpler solution was in order - which is what the current proposed changes are a conclusion to.
+I decided to scrap this mechanic. It was originally intended to further promote players who could track and aim effectively; but, in the end, I think it was too complicated and that a simpler solution was in order - which is what these changes are a conclusion to.
 
 *Contributors: tristenmilk*

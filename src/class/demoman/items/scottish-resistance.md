@@ -33,7 +33,7 @@
 
 *Source: [TF Wiki](https://wiki.teamfortress.com/wiki/Scottish_Resistance)*
 
-## Proposed Change
+## Approved Change
 ...
 
 ## Disputed Change #1

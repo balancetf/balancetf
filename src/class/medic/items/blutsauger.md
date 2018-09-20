@@ -28,7 +28,7 @@
 
 *Source: [TF Wiki](https://wiki.teamfortress.com/wiki/Blutsauger)*
 
-## Proposed Change
+## Approved Change
 ...
 
 ## Disputed Change #1

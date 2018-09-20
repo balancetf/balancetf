@@ -26,7 +26,7 @@
 
 *Source: [TF Wiki](https://wiki.teamfortress.com/wiki/Pistol)*
 
-## Proposed Change
+## Approved Change
 ...
 
 ## Disputed Change #1

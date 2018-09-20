@@ -31,7 +31,7 @@
 
 *Source: [TF Wiki](https://wiki.teamfortress.com/wiki/Sydney_Sleeper)*
 
-## Proposed Change
+## Approved Change
 ...
 
 ## Disputed Change #1

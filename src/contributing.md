@@ -1,7 +1,7 @@
 # Contributing
 
 ## Preface
-As stated in the foreword, the goal of this document is to be as unbiased as possible. That said, we'll probably be accepting most PRs for changes *that are reasonable*. If the general consensus of a proposed change is "that's absolutely ridiculous," it may be declined or removed later if it has been added already.
+As stated in the foreword, the goal of this document is to be as unbiased as possible. That said, we'll probably be accepting most PRs for changes *that are reasonable*. If the general consensus of an Approved Change is "that's absolutely ridiculous," it may be declined or removed later if it has been added already.
 
 ## Some Rules
 Whether you want to contribute via PR or issue, there are some guidelines that should be followed:
@@ -19,7 +19,7 @@ This is the most helpful method of contributing as it means that we don't have t
 
 ### Template
 
-**Always** put your idea under the Disputed Changes section. The goal of this document is to get the attention of Valve, and the Proposed Change section is reserved for changes that have been thoroughly reviewed and we definitely want to push for.
+**Always** put your idea under the Disputed Changes section. The goal of this document is to get the attention of Valve, and the Approved Change section is reserved for changes that have been thoroughly reviewed and we definitely want to push for.
 
 There is a very particular format we're trying to adhere to, so when making PRs, please use the following template.
 
@@ -54,7 +54,7 @@ your table doesn't have to look this nice, but it would be nice. it is much easi
 
 *Source: [TF Wiki](url of that item's wiki page)*
 
-## Proposed Change
+## Approved Change
 ...
 
 ## Disputed Change #x

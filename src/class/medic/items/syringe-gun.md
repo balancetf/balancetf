@@ -27,7 +27,7 @@
 
 *Source: [TF Wiki](https://wiki.teamfortress.com/wiki/Syringe_Gun)*
 
-## Proposed Change
+## Approved Change
 ...
 
 ## Disputed Change #1
