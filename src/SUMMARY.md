@@ -10,6 +10,7 @@
     - [Pyro](class/pyro/pyro.md)
     - [Demoman](class/demoman/demoman.md)
         - [Scottish Resistance](class/demoman/items/scottish-resistance.md)
+        - [Stickybomb Launcher](class/demoman/items/stickybomb-launcher.md)
     - [Heavy](class/heavy/heavy.md)
         - [Minigun](class/heavy/items/minigun.md)
     - [Engineer](class/engineer/engineer.md)
