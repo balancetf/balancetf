@@ -1,0 +1,49 @@
+If you're editing a file that already has proposed changes in it, only copy "## Disputed Change #x" and all lines below it.
+If not, copy everything from "# Item Name"
+
+# Item Name
+
+The item's current statistics. Grab any you can find from the TF wiki and organize them into tables like below.
+Some common rows are created for you.
+Your table doesn't have to look perfect here as long as it's valid markdown, but it'd be nice if it was.
+
+| Misc               |         |
+|--------------------|--------:|
+| Hitscan/Projectile |       ? |
+| Ranged/Melee       |       ? |
+| Effect             |       ? |
+
+| Damage    |        |
+|-----------|-------:|
+| Type      |      ? |
+| Base      |      ? |
+| Crit      |      ? |
+| Mini-crit |      ? |
+
+| Function Times  |      |
+|-----------------|-----:|
+| Attack Interval |    ? |
+
+*Source: [TF Wiki](url of item's wiki page)*
+If you have any other useful info not found on the TF wiki and it belongs in the above tables, include it and cite your sources.
+
+## Proposed Change
+...
+
+## Disputed Change #x
+Where x is the number of the above change +1. Obviously, first one is #1.
+
+### Changes from Stock
+Any statistics that are different from the stock item that goes in this slot. NOT changes from the current state of this item.
+
+### Current Problems
+Why do you think the item needs to be changed?
+
+### Explanation of Changes
+Why you think your changes will benefit the game?
+
+### Additional Comments
+This section is optional, it's just for information that doesn't fit anywhere else.
+
+*Contributors: username1, username2, etc.*
+Replace usernameX with the names of anyone you want to be credited for this idea, including yourself.
