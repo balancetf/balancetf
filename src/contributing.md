@@ -79,5 +79,5 @@ Once you've got this all filled out, it's good to run it through a [markdown pre
 
 ## Issues
 
-If you're not comfortable with pull requests, that's fine. You can just [open an issue](https://github.com/phxvyper/tf-rebalance/issues/new/choose) and fill out the template labeled "New Change Proposal."
+If you're not comfortable with pull requests, that's fine. You can just [open an issue](https://github.com/balancetf/balancetf/issues/new/choose) and fill out the template labeled "New Change Proposal."
 
