@@ -13,6 +13,16 @@ Whether you want to contribute via PR or issue, there are some guidelines that s
     * This is so it's easier to search through previous proposals and avoid making duplicates.
 * Currently, we're only dealing with existing items. We won't accept PRs about ideas for new unlocks. We also won't accept PRs about changes to things like gamemodes, maps, etc. (though we plan to do so later)
 
+## Proposing a New Idea
+
+If you've got an idea for balancing an existing item in the game, then follow the instructions below for [creating a Pull Request](#pull-requests).
+
+## Adding Feedback to an Existing Idea
+
+In the case that you want to provide feedback for an existing proposal, **you should first check to see if an existing Pull Request or Issue Thread already exists for that proposal**. If there is already an existing PR or Issue for the proposal you're interested in providing feedback for - then please continue to add discussion to that thread!
+
+However, if there is not an existing change, then go ahead and [create a Pull Request](#pull-requests) or [create an Issue](#issues) for the proposal you'd like to add feedback to.
+
 ## Pull Requests
 
 This is the most helpful method of contributing as it means that we don't have to manually put your idea into the format of this document. However, it is not necessary. If you're not comfortable with making PRs, you can skip this section and read [Issues](#issues). Otherwise, it's best to be familiar with [Github Markdown](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf).

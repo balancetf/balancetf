@@ -6,3 +6,8 @@ table {
 table thead {
     text-align: left;
 }
+
+.discussion-footer {
+    color: gray;
+    font-size: small;
+}
