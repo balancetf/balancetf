@@ -1,5 +1,5 @@
 [book]
-title = "tf-rebalance"
+title = "balance.tf"
 authors = ["TristenMilk", "rrredface"]
 description = "A collection of ideas for balance changes in TF2"
 src = "src"
