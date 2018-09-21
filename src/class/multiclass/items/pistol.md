@@ -50,4 +50,4 @@ As explained in the global changes section, random spread will either punish a p
 ### Additional Comments
 ...
 
-*Contributor: rrredface*
+*Contributors: rrredface*
