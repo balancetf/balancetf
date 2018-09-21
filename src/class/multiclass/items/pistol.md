@@ -29,9 +29,7 @@
 ## Proposed Change
 ...
 
-## Disputed Changes
-### Contributor
-rrredface
+## Disputed Change #1
 
 ### Changes from Stock
 This is a stock weapon, so all changes will be differences from its current state (written Sep 18, 2018.)
@@ -50,4 +48,6 @@ In its current state, the Pistol is quite balanced. The problem is the fact that
 As explained in the global changes section, random spread will either punish a player for aiming well, or reward a player for not aiming well enough. By removing random spread, this is no longer true. The Pistol's minimum damage is reduced to half of its current value to prevent it from being too destructive from long ranges, since it would have perfect accuracy.
 
 ### Additional Comments
+...
 
+*Contributor: rrredface*

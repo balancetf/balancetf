@@ -29,9 +29,7 @@
 ## Proposed Change
 ...
 
-## Disputed Changes
-### Contributor
-rrredface
+## Disputed Change #1
 
 #### Changes from Stock
 * This weapon cannot charge.
@@ -56,3 +54,5 @@ Additionally, in the current state of 6v6 TF2, the sniper is mostly used for the
 
 #### Additional Comments
 During some discussion of this idea, it was brought up that it might be quite annoying to be fighting a player who gets unexpectedly healed for up to 75 HP by a sniper mid-fight. I don't think this is a major issue, however, as it would be very easy to keep track of exactly how much meter the sniper has, since it's very easy to keep track of when an enemy sniper hits headshots.
+
+*Contributors: rrredface*
