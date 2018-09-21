@@ -45,6 +45,6 @@ The Syringe Gun is currently used extremely rarely because it doesn't have high 
 Allowing the Syringe Gun to heal at 40 health/s gives it the use of quickly topping up a hurt teammate, even in combat, at a rate faster than medi guns. This comes with the tradeoff of it not building ubercharge.
 
 ### Additional Comments
-This change is best looked at in context with our proposed changes to the Blutsauger and Crusader's Crossbow as well. They are designed to be balanced around each other.
+This change is best looked at in context with our proposed changes to the [Blutsauger](blutsauger.md#disputed-change-1) and [Crusader's Crossbow](crusaders-crossbow.md#disputed-change-1) as well. They are designed to be balanced around each other.
 
 *Contributors: rrredface, tristenmilk, RibbonHeartU*
