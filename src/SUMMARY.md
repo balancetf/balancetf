@@ -2,6 +2,7 @@
 
 [Foreword](README.md)
 [Contributing](contributing.md)
+[FAQ](faq.md)
 
 - [Global Changes](global.md)
 - [Classes](class/classes.md)
@@ -24,3 +25,5 @@
     - [Spy](class/spy/spy.md)
     - [Multi Class](class/multiclass/multiclass.md)
         - [Pistol](class/multiclass/items/pistol.md)
+
+[Contact Info](contact.md)
