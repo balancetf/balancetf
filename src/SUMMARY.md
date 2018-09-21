@@ -14,6 +14,7 @@
         - [Minigun](class/heavy/items/minigun.md)
     - [Engineer](class/engineer/engineer.md)
     - [Medic](class/medic/medic.md)
+        - [Vaccinator](class/medic/items/vaccinator.md)
     - [Sniper](class/sniper/sniper.md)
         - [Sydney Sleeper](class/sniper/items/sydney-sleeper.md)
     - [Spy](class/spy/spy.md)
