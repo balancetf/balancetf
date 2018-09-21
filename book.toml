@@ -8,5 +8,5 @@ src = "src"
 build-dir = "docs"
 
 [output.html]
-additional-css = ["css/custom.css"]
+additional-css = ["custom.css"]
 additional-js = ["custom.js"]
