@@ -1,7 +1,7 @@
 [book]
-title = "tf-rebalance"
+title = "balance.tf"
 authors = ["TristenMilk", "rrredface"]
-description = "A collection of ideas for balance changes in TF2"
+description = "A record of ideas for making Team Fortress 2 more interesting and less frustrating to play."
 src = "src"
 
 [build]
@@ -9,3 +9,4 @@ build-dir = "docs"
 
 [output.html]
 additional-css = ["css/custom.css"]
+additional-js = ["custom.js"]
