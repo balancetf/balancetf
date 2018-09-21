@@ -36,6 +36,7 @@
 ### Changes from Stock
 * Syringes heal teammates at a rate of 2 health per syringe (max 20 health/s)
     * Healing done with this weapon is returned to the medic at half the rate. So for every 20 health given to teammates, the medic gets 10 in return.
+    * Does not overheal the patient or the medic.
     * Does not build ubercharge.
 
 ### Current Problems
@@ -45,6 +46,6 @@ Currently, the blutsauger is simply not good enough. It passively drains the use
 By eliminating the passive health degeneration and moving the healing mechanic to one that encourages healing teammates, the medic can now take advantage of this weapon's upside without letting his teammates die. It doesn't have the burst healing potential of the currently most used item in its slot, the Crusader's Crossbow, but it trades this off for the ability to sustain the medic's own life.
 
 ### Additional Comments
-...
+This change is best looked at in context with our proposed changes to the Syringe Gun and Crusader's Crossbow as well. They are designed to be balanced around each other.
 
 *Contributors: rrredface, tristenmilk, RibbonHeartU*
