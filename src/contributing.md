@@ -13,6 +13,22 @@ Whether you want to contribute via PR or issue, there are some guidelines that s
     * This is so it's easier to search through previous proposals and avoid making duplicates.
 * Currently, we're only dealing with existing items. We won't accept PRs about ideas for new unlocks. We also won't accept PRs about changes to things like gamemodes, maps, etc. (though we plan to do so later)
 
+## Principles for Good Balance
+Some general rules should be followed when crafting an idea for a balance change to ensure that it results in an interesting and fun item.
+
+* Is it fun both to use, and to play against? The answer to both should be yes.
+* Imagine a scenario in which you are playing an organized game of TF2. You're playing the class that equips the item you're changing.
+    * Would you think "I have to use this item if I want to win?"
+    * Would you think "I can't use this item if I want to win?"
+    * If the answer to either of the above questions is yes, it's not a good change.
+* Would the mechanics of the item be random/unpredictable in nature? If yes, it's probably not a good change.
+* The item should be sufficiently different from others in its slot to be interesting. Just swapping around statistics is probably not going to achieve this.
+
+In addition to the above guidelines, do consider what the TF team is likely to accept. Some factors they'd likely take into account:
+
+* Could a relatively new player get a good idea of how the item works by reading its statistics? If not, it might be a bit too convoluted.
+* Would it constitute completely remaking/removing existing game assets like weapon models? If so, they will probably not be interested.
+
 ## Proposing a New Idea
 
 If you've got an idea for balancing an existing item in the game, then follow the instructions below for [creating a Pull Request](#pull-requests).
