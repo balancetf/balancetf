@@ -15,6 +15,7 @@
     - [Heavy](class/heavy/heavy.md)
         - [Dalokohs Bar](class/heavy/items/dalokohs-bar.md)
         - [Minigun](class/heavy/items/minigun.md)
+        - [Sandvich](class/heavy/items/sandvich.md)
     - [Engineer](class/engineer/engineer.md)
     - [Medic](class/medic/medic.md)
         - [Blutsauger](class/medic/items/blutsauger.md)
