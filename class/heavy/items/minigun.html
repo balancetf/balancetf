@@ -1,0 +1,263 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Minigun - balance.tf</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="A record of ideas for making Team Fortress 2 more interesting and less frustrating to play.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="../../../favicon.png">
+        <link rel="stylesheet" href="../../../css/variables.css">
+        <link rel="stylesheet" href="../../../css/general.css">
+        <link rel="stylesheet" href="../../../css/chrome.css">
+        <link rel="stylesheet" href="../../../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../../FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../../highlight.css">
+        <link rel="stylesheet" href="../../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="../../../custom.css">
+        
+
+        
+    </head>
+    <body class="light">
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">var path_to_root = "../../../";</script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { } 
+            if (theme === null || theme === undefined) { theme = 'light'; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <ol class="chapter"><li class="affix"><a href="../../../index.html">Foreword</a></li><li class="affix"><a href="../../../contributing.html">Contributing</a></li><li class="affix"><a href="../../../faq.html">FAQ</a></li><li><a href="../../../global.html"><strong aria-hidden="true">1.</strong> Global Changes</a></li><li><a href="../../../class/classes.html"><strong aria-hidden="true">2.</strong> Classes</a></li><li><ol class="section"><li><a href="../../../class/scout/scout.html"><strong aria-hidden="true">2.1.</strong> Scout</a></li><li><a href="../../../class/soldier/soldier.html"><strong aria-hidden="true">2.2.</strong> Soldier</a></li><li><a href="../../../class/pyro/pyro.html"><strong aria-hidden="true">2.3.</strong> Pyro</a></li><li><a href="../../../class/demoman/demoman.html"><strong aria-hidden="true">2.4.</strong> Demoman</a></li><li><ol class="section"><li><a href="../../../class/demoman/items/scottish-resistance.html"><strong aria-hidden="true">2.4.1.</strong> Scottish Resistance</a></li><li><a href="../../../class/demoman/items/stickybomb-launcher.html"><strong aria-hidden="true">2.4.2.</strong> Stickybomb Launcher</a></li></ol></li><li><a href="../../../class/heavy/heavy.html"><strong aria-hidden="true">2.5.</strong> Heavy</a></li><li><ol class="section"><li><a href="../../../class/heavy/items/minigun.html" class="active"><strong aria-hidden="true">2.5.1.</strong> Minigun</a></li></ol></li><li><a href="../../../class/engineer/engineer.html"><strong aria-hidden="true">2.6.</strong> Engineer</a></li><li><a href="../../../class/medic/medic.html"><strong aria-hidden="true">2.7.</strong> Medic</a></li><li><ol class="section"><li><a href="../../../class/medic/items/blutsauger.html"><strong aria-hidden="true">2.7.1.</strong> Blutsauger</a></li><li><a href="../../../class/medic/items/crusaders-crossbow.html"><strong aria-hidden="true">2.7.2.</strong> Crusader's Crossbow</a></li><li><a href="../../../class/medic/items/syringe-gun.html"><strong aria-hidden="true">2.7.3.</strong> Syringe Gun</a></li><li><a href="../../../class/medic/items/vaccinator.html"><strong aria-hidden="true">2.7.4.</strong> Vaccinator</a></li></ol></li><li><a href="../../../class/sniper/sniper.html"><strong aria-hidden="true">2.8.</strong> Sniper</a></li><li><ol class="section"><li><a href="../../../class/sniper/items/sydney-sleeper.html"><strong aria-hidden="true">2.8.1.</strong> Sydney Sleeper</a></li></ol></li><li><a href="../../../class/spy/spy.html"><strong aria-hidden="true">2.9.</strong> Spy</a></li><li><a href="../../../class/multiclass/multiclass.html"><strong aria-hidden="true">2.10.</strong> Multi Class</a></li><li><ol class="section"><li><a href="../../../class/multiclass/items/pistol.html"><strong aria-hidden="true">2.10.1.</strong> Pistol</a></li></ol></li></ol></li><li><a href="../../../contact.html">Contact Info</a></li></ol>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light <span class="default">(default)</span></button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">balance.tf</h1> 
+
+                        <div class="right-buttons">
+                            <a href="../../../print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <a class="header" href="#minigun" id="minigun"><h1>Minigun</h1></a>
+<table><thead><tr><th> Misc               </th><th align="right">         </th></tr></thead><tbody>
+<tr><td> Hitscan/Projectile </td><td align="right"> Hitscan </td></tr>
+<tr><td> Ranged/Melee       </td><td align="right">  Ranged </td></tr>
+<tr><td> Ammo Reserve       </td><td align="right">     200 </td></tr>
+<tr><td> Windup move speed  </td><td align="right">     47% </td></tr>
+</tbody></table>
+<table><thead><tr><th> Damage                  </th><th>                </th></tr></thead><tbody>
+<tr><td> Type                    </td><td align="right">         Bullet </td></tr>
+<tr><td> Max rampup (150%)       </td><td align="right">  13.5 / bullet </td></tr>
+<tr><td> Base damage (100%)      </td><td align="right">     9 / bullet </td></tr>
+<tr><td> Max falloff (50%)       </td><td align="right">   4.5 / bullet </td></tr>
+<tr><td> Crit                    </td><td align="right">    27 / bullet </td></tr>
+<tr><td> Mini-crit               </td><td align="right"> 12-18 / bullet </td></tr>
+</tbody></table>
+<table><thead><tr><th> Function Times          </th><th>                </th></tr></thead><tbody>
+<tr><td> Attack interval         </td><td align="right">    0.1 seconds </td></tr>
+<tr><td> Windup time             </td><td align="right">   0.87 seconds </td></tr>
+</tbody></table>
+<p><em>Source: <a href="https://wiki.teamfortress.com/wiki/Minigun">TF Wiki</a></em></p>
+<a class="header" href="#approved-change" id="approved-change"><h2>Approved Change</h2></a>
+<p>...</p>
+<a class="header" href="#disputed-change-1" id="disputed-change-1"><h2>Disputed Change #1</h2></a>
+<a class="header" href="#changes-from-stock" id="changes-from-stock"><h3>Changes from Stock</h3></a>
+<p>Completely replace the minigun with a Burstgun:</p>
+<ul>
+<li><strong>This weapon fires in bursts.</strong></li>
+</ul>
+<table><thead><tr><th> Misc               </th><th>         </th></tr></thead><tbody>
+<tr><td> Hitscan/Projectile </td><td align="right"> Hitscan </td></tr>
+<tr><td> Ranged/Melee       </td><td align="right">  Ranged </td></tr>
+<tr><td> Ammo per burst     </td><td align="right">       1 </td></tr>
+<tr><td> Bullets per burst  </td><td align="right">       4 </td></tr>
+<tr><td> Clip size          </td><td align="right">       6 </td></tr>
+<tr><td> Ammo reserve       </td><td align="right">      36 </td></tr>
+</tbody></table>
+<table><thead><tr><th> Damage                  </th><th>                </th></tr></thead><tbody>
+<tr><td> Type                    </td><td align="right">         Bullet </td></tr>
+<tr><td> Max rampup (150%)       </td><td align="right">  17.5 / bullet </td></tr>
+<tr><td> Base damage (100%)      </td><td align="right">    11 / bullet </td></tr>
+<tr><td> Max falloff (50%)       </td><td align="right">   5.5 / bullet </td></tr>
+<tr><td> Crit                    </td><td align="right">    33 / bullet </td></tr>
+</tbody></table>
+<table><thead><tr><th> Function Times          </th><th>                </th></tr></thead><tbody>
+<tr><td> Attack interval         </td><td align="right">    0.3 seconds </td></tr>
+<tr><td> Burst time              </td><td align="right">   0.45 seconds </td></tr>
+<tr><td> Reload (first)          </td><td align="right">   0.75 seconds </td></tr>
+<tr><td> Reload (consecutive)    </td><td align="right">   0.55 seconds </td></tr>
+</tbody></table>
+<p>Notes:
+Burst time is the amount of time that it takes for all bullets in a burst to be fired consecutively. Meaning that each bullet has an intermediate interval of <code>x ÷ n</code> where x is Burst time and n is the number of bullets fired.</p>
+<a class="header" href="#current-problems" id="current-problems"><h3>Current Problems</h3></a>
+<p>A lot of the skill involved in TF2 involves the complex and dynamic relationship between movement and aim. The Heavy is the only class that directly segregates these two features with the Windup mechanic on the Heavy's Minigun - from the time when windup starts to when the minigun is unwound, the player's movement speed is significantly slowed. The Minigun is also designed around random spread in order to reduce the effective range of the weapon, instead of relying on damage fall off and the player's ability to track when aiming.</p>
+<p>Overall it seems that the the Heavy is a complete contradiction to the design of the rest of the classes, as it pertains to movement.</p>
+<a class="header" href="#explanation-of-changes" id="explanation-of-changes"><h3>Explanation of Changes</h3></a>
+<p>Removing the decoupling between movement and fighting, by removing the wind up mechanic, should introduce a healthier relationship between movement and fighting for this class. The overall damage output of the class has been reduced significantly, but the opportunities where the class can output damage have been increased significantly. The weapon still shoots a stream of bullets, but only for a short period of time, and with a delay between each burst of bullets. This inherently rewards players who have good aim and can reliably track their targets.</p>
+<a class="header" href="#additional-comments" id="additional-comments"><h3>Additional Comments</h3></a>
+<p>Originally, when designing this weapon, there was an additional mechanic called &quot;Vulnerability&quot; which would replace the ramp-up/fall-off of the Burstgun. Instead, all players had &quot;Vulnerability&quot; stat which starts at 0.5 by default. Damage caused by the Burstgun would increase the player's vulnerability by a proportional amount, capping off at 1.5. Vulnerability decreases back down to 0.5 over time. The damage done to players by the Burstgun would be multiplied by the effected players Vulnerability before being applied to the player.</p>
+<p>I decided to scrap this mechanic. It was originally intended to further promote players who could track and aim effectively; but, in the end, I think it was too complicated and that a simpler solution was in order - which is what these changes are a conclusion to.</p>
+<p><em>Contributors: tristenmilk</em></p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="../../../class/heavy/heavy.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="../../../class/engineer/engineer.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="../../../class/heavy/heavy.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="../../../class/engineer/engineer.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script src="../../../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../../searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="../../../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+        <script type="text/javascript" src="../../../custom.js"></script>
+        
+
+        
+
+    </body>
+</html>

@@ -1,0 +1,255 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Sydney Sleeper - balance.tf</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="A record of ideas for making Team Fortress 2 more interesting and less frustrating to play.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="../../../favicon.png">
+        <link rel="stylesheet" href="../../../css/variables.css">
+        <link rel="stylesheet" href="../../../css/general.css">
+        <link rel="stylesheet" href="../../../css/chrome.css">
+        <link rel="stylesheet" href="../../../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../../FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../../highlight.css">
+        <link rel="stylesheet" href="../../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="../../../custom.css">
+        
+
+        
+    </head>
+    <body class="light">
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">var path_to_root = "../../../";</script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { } 
+            if (theme === null || theme === undefined) { theme = 'light'; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <ol class="chapter"><li class="affix"><a href="../../../index.html">Foreword</a></li><li class="affix"><a href="../../../contributing.html">Contributing</a></li><li class="affix"><a href="../../../faq.html">FAQ</a></li><li><a href="../../../global.html"><strong aria-hidden="true">1.</strong> Global Changes</a></li><li><a href="../../../class/classes.html"><strong aria-hidden="true">2.</strong> Classes</a></li><li><ol class="section"><li><a href="../../../class/scout/scout.html"><strong aria-hidden="true">2.1.</strong> Scout</a></li><li><a href="../../../class/soldier/soldier.html"><strong aria-hidden="true">2.2.</strong> Soldier</a></li><li><a href="../../../class/pyro/pyro.html"><strong aria-hidden="true">2.3.</strong> Pyro</a></li><li><a href="../../../class/demoman/demoman.html"><strong aria-hidden="true">2.4.</strong> Demoman</a></li><li><ol class="section"><li><a href="../../../class/demoman/items/scottish-resistance.html"><strong aria-hidden="true">2.4.1.</strong> Scottish Resistance</a></li><li><a href="../../../class/demoman/items/stickybomb-launcher.html"><strong aria-hidden="true">2.4.2.</strong> Stickybomb Launcher</a></li></ol></li><li><a href="../../../class/heavy/heavy.html"><strong aria-hidden="true">2.5.</strong> Heavy</a></li><li><ol class="section"><li><a href="../../../class/heavy/items/minigun.html"><strong aria-hidden="true">2.5.1.</strong> Minigun</a></li></ol></li><li><a href="../../../class/engineer/engineer.html"><strong aria-hidden="true">2.6.</strong> Engineer</a></li><li><a href="../../../class/medic/medic.html"><strong aria-hidden="true">2.7.</strong> Medic</a></li><li><ol class="section"><li><a href="../../../class/medic/items/blutsauger.html"><strong aria-hidden="true">2.7.1.</strong> Blutsauger</a></li><li><a href="../../../class/medic/items/crusaders-crossbow.html"><strong aria-hidden="true">2.7.2.</strong> Crusader's Crossbow</a></li><li><a href="../../../class/medic/items/syringe-gun.html"><strong aria-hidden="true">2.7.3.</strong> Syringe Gun</a></li><li><a href="../../../class/medic/items/vaccinator.html"><strong aria-hidden="true">2.7.4.</strong> Vaccinator</a></li></ol></li><li><a href="../../../class/sniper/sniper.html"><strong aria-hidden="true">2.8.</strong> Sniper</a></li><li><ol class="section"><li><a href="../../../class/sniper/items/sydney-sleeper.html" class="active"><strong aria-hidden="true">2.8.1.</strong> Sydney Sleeper</a></li></ol></li><li><a href="../../../class/spy/spy.html"><strong aria-hidden="true">2.9.</strong> Spy</a></li><li><a href="../../../class/multiclass/multiclass.html"><strong aria-hidden="true">2.10.</strong> Multi Class</a></li><li><ol class="section"><li><a href="../../../class/multiclass/items/pistol.html"><strong aria-hidden="true">2.10.1.</strong> Pistol</a></li></ol></li></ol></li><li><a href="../../../contact.html">Contact Info</a></li></ol>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light <span class="default">(default)</span></button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">balance.tf</h1> 
+
+                        <div class="right-buttons">
+                            <a href="../../../print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <a class="header" href="#sydney-sleeper" id="sydney-sleeper"><h1>Sydney Sleeper</h1></a>
+<table><thead><tr><th> Misc               </th><th align="right">         </th></tr></thead><tbody>
+<tr><td> Hitscan/Projectile </td><td align="right"> Hitscan </td></tr>
+<tr><td> Ranged/Melee       </td><td align="right">  Ranged </td></tr>
+<tr><td> Effect             </td><td align="right">  Jarate </td></tr>
+</tbody></table>
+<table><thead><tr><th> Damage                  </th><th>        </th></tr></thead><tbody>
+<tr><td> Type                    </td><td align="right"> Bullet </td></tr>
+<tr><td> Base (uncharged)        </td><td align="right">     50 </td></tr>
+<tr><td> Crit (uncharged)        </td><td align="right">    150 </td></tr>
+<tr><td> Mini-crit (uncharged)   </td><td align="right">     68 </td></tr>
+<tr><td> Base (full charge)      </td><td align="right">    150 </td></tr>
+<tr><td> Crit (full charge)      </td><td align="right">    450 </td></tr>
+<tr><td> Mini-crit (full charge) </td><td align="right">    203 </td></tr>
+</tbody></table>
+<table><thead><tr><th> Function Times                </th><th>      </th></tr></thead><tbody>
+<tr><td> Attack Interval               </td><td align="right"> 1.5s </td></tr>
+<tr><td> Effect Duration (uncharged)   </td><td align="right">   2s </td></tr>
+<tr><td> Effect Duration (full charge) </td><td align="right">   8s </td></tr>
+<tr><td> Time to fully charge          </td><td align="right"> 2.8s </td></tr>
+<tr><td> Zoom-in Charge Delay          </td><td align="right"> 1.3s </td></tr>
+</tbody></table>
+<table><thead><tr><th> Ammo        </th><th>      </th></tr></thead><tbody>
+<tr><td> Carried     </td><td align="right">   25 </td></tr>
+<tr><td> Reload Type </td><td align="right"> None </td></tr>
+</tbody></table>
+<p><em>Source: <a href="https://wiki.teamfortress.com/wiki/Sydney_Sleeper">TF Wiki</a></em></p>
+<a class="header" href="#approved-change" id="approved-change"><h2>Approved Change</h2></a>
+<p>...</p>
+<a class="header" href="#disputed-change-1" id="disputed-change-1"><h2>Disputed Change #1</h2></a>
+<a class="header" href="#changes-from-stock" id="changes-from-stock"><h4>Changes from Stock</h4></a>
+<ul>
+<li>This weapon cannot charge.</li>
+<li>Headshotting enemies will build up a meter that allows the sniper to shoot his teammates to heal them.
+<ul>
+<li>This meter has a maximum value of 300.</li>
+<li>Damage dealt by headshots is returned as meter. For example, a 140 damage headshot will return 140 meter.</li>
+<li>Teammates are healed for half the damage a shot would do to an enemy. This means headshotting teammates heals them faster.</li>
+<li>Healing teammates depletes meter equal to the amount of health healed.</li>
+<li>This cannot overheal teammates.</li>
+</ul>
+</li>
+</ul>
+<a class="header" href="#current-problems" id="current-problems"><h4>Current Problems</h4></a>
+<p>Currently, I feel it's too easy to be effective with the Sydney Sleeper without hitting headshots because of the weapon's increased charge rate compared to stock and its jarate effect. Additionally, because it applies jarate, it allows the sniper to stand outside the effective range of other classes and effectively increase the effective range of his own teammates, as mini-crits ignore damage falloff. As a result, I feel it's too easy for a sniper to do 150 damage without any potential for retaliation, and also make it significantly more difficult to escape after the damage is done.</p>
+<a class="header" href="#explanation-of-changes" id="explanation-of-changes"><h4>Explanation of Changes</h4></a>
+<p>The goal of this change is more to make the sniper class as a whole more interesting, rather than specifically the Sydney Sleeper. The meter for headshots mechanic rewards skilled players, and allows the sniper to have a purpose beyond getting one or two picks and letting his team push off of them. His ability to heal teammates would allow him to effectively participate in pushes initiated by the picks he gets.</p>
+<p>Assuming a base damage of 50, and an attack interval of 1.5s, the sniper could heal teammates at about 16HP/second with bodyshots. Due to the 0.2 second delay between scoping and being able to headshot, the potential healing rate with headshots would be about 44HP/second.</p>
+<p>The meter cap of 300 is to ensure that the sniper still has to hit headshots to consistently put out healing.</p>
+<a class="header" href="#additional-comments" id="additional-comments"><h4>Additional Comments</h4></a>
+<p>During some discussion of this idea, it was brought up that it might be quite annoying to be fighting a player who gets unexpectedly healed for up to 75 HP by a sniper during a fight. I don't think this is a major issue, however, as it would be very easy to keep track of exactly how much meter the sniper has, since it's very easy to keep track of when an enemy sniper hits headshots. Therefore you can be prepared for anyone you're fighting to be healed.</p>
+<p><em>Contributors: rrredface</em></p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="../../../class/sniper/sniper.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="../../../class/spy/spy.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="../../../class/sniper/sniper.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="../../../class/spy/spy.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script src="../../../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../../searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="../../../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+        <script type="text/javascript" src="../../../custom.js"></script>
+        
+
+        
+
+    </body>
+</html>

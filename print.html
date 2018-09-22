@@ -1,0 +1,1157 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>balance.tf</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="A record of ideas for making Team Fortress 2 more interesting and less frustrating to play.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="custom.css">
+        
+
+        
+    </head>
+    <body class="light">
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">var path_to_root = "";</script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { } 
+            if (theme === null || theme === undefined) { theme = 'light'; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <ol class="chapter"><li class="affix"><a href="index.html">Foreword</a></li><li class="affix"><a href="contributing.html">Contributing</a></li><li class="affix"><a href="faq.html">FAQ</a></li><li><a href="global.html"><strong aria-hidden="true">1.</strong> Global Changes</a></li><li><a href="class/classes.html"><strong aria-hidden="true">2.</strong> Classes</a></li><li><ol class="section"><li><a href="class/scout/scout.html"><strong aria-hidden="true">2.1.</strong> Scout</a></li><li><a href="class/soldier/soldier.html"><strong aria-hidden="true">2.2.</strong> Soldier</a></li><li><a href="class/pyro/pyro.html"><strong aria-hidden="true">2.3.</strong> Pyro</a></li><li><a href="class/demoman/demoman.html"><strong aria-hidden="true">2.4.</strong> Demoman</a></li><li><ol class="section"><li><a href="class/demoman/items/scottish-resistance.html"><strong aria-hidden="true">2.4.1.</strong> Scottish Resistance</a></li><li><a href="class/demoman/items/stickybomb-launcher.html"><strong aria-hidden="true">2.4.2.</strong> Stickybomb Launcher</a></li></ol></li><li><a href="class/heavy/heavy.html"><strong aria-hidden="true">2.5.</strong> Heavy</a></li><li><ol class="section"><li><a href="class/heavy/items/minigun.html"><strong aria-hidden="true">2.5.1.</strong> Minigun</a></li></ol></li><li><a href="class/engineer/engineer.html"><strong aria-hidden="true">2.6.</strong> Engineer</a></li><li><a href="class/medic/medic.html"><strong aria-hidden="true">2.7.</strong> Medic</a></li><li><ol class="section"><li><a href="class/medic/items/blutsauger.html"><strong aria-hidden="true">2.7.1.</strong> Blutsauger</a></li><li><a href="class/medic/items/crusaders-crossbow.html"><strong aria-hidden="true">2.7.2.</strong> Crusader's Crossbow</a></li><li><a href="class/medic/items/syringe-gun.html"><strong aria-hidden="true">2.7.3.</strong> Syringe Gun</a></li><li><a href="class/medic/items/vaccinator.html"><strong aria-hidden="true">2.7.4.</strong> Vaccinator</a></li></ol></li><li><a href="class/sniper/sniper.html"><strong aria-hidden="true">2.8.</strong> Sniper</a></li><li><ol class="section"><li><a href="class/sniper/items/sydney-sleeper.html"><strong aria-hidden="true">2.8.1.</strong> Sydney Sleeper</a></li></ol></li><li><a href="class/spy/spy.html"><strong aria-hidden="true">2.9.</strong> Spy</a></li><li><a href="class/multiclass/multiclass.html"><strong aria-hidden="true">2.10.</strong> Multi Class</a></li><li><ol class="section"><li><a href="class/multiclass/items/pistol.html"><strong aria-hidden="true">2.10.1.</strong> Pistol</a></li></ol></li></ol></li><li><a href="contact.html">Contact Info</a></li></ol>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light <span class="default">(default)</span></button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">balance.tf</h1> 
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <a class="header" href="#foreword" id="foreword"><h1>Foreword</h1></a>
+<p>The purpose of this book is to put forth some ideas on how to change some of the items in TF2 that are unbalanced.</p>
+<p>It is highly encouraged for anyone reading this with their own ideas to make a pull request or issue on the <a href="https://github.com/balancetf/balancetf">repository</a>.
+Before you do so, please read <strong><a href="contributing.html">Contributing</a></strong>. It contains the rules for contributing, templates for PRs and issues, and explains what information is necessary to get your change merged.</p>
+<p>If you'd still like to participate in the decision making behind proposed item changes, then join <a href="https://discord.gg/7GmCDUP">the discord server</a>! Whenever we champion a proposal for approval, we'll have the community vote on it before making a final decision. You can also add in-depth feedback to the Proposal Champion while its being voted on (see <a href="contributing.html">Contributing</a>).</p>
+<p>It's important to remember that the maintainers are just people with opinions, so disagreements are inevitable. In order to remain as unbiased as possible, changes not yet reviewed either by the community at large or a handful of high level players will be listed as &quot;disputed.&quot; Only after review will they be &quot;approved&quot; as the change that is definitely being proposed. <strong>Approved changes are not final</strong>. You are still welcome to propose tweaks to them.</p>
+<a class="header" href="#approved-and-disputed-changes" id="approved-and-disputed-changes"><h2>Approved and Disputed Changes</h2></a>
+<p>Something you'll notice throughout this document is the distinction between &quot;Approved&quot; and &quot;Disputed&quot; changes. Essentially, for any given item, there is a theoretically unlimited number of disputed changes. This means that the change has not received signifcant enough review to be approved, or the general consensus is about that change is negative. The default state of a change is disputed. The approval process is based on 2 factors:</p>
+<ol>
+<li>Opinions of high level competitive players.
+<ul>
+<li>It stands to reason that the best players in the game are the most experienced and are therefore more qualified to judge balance changes than someone with less experience.</li>
+</ul>
+</li>
+<li>Opinions of the community at large.
+<ul>
+<li>If the community members participating in this project are generally in favor of a change, that will increase its chances of being championed for approval.</li>
+</ul>
+</li>
+</ol>
+<a class="header" href="#balance-mod" id="balance-mod"><h2>Balance Mod</h2></a>
+<p>Something we'd really like is to turn the changes proposed in this book into a playable mod. We'd host this mod on one or more servers to actually give them some thorough playtesting, therefore giving more credibility to the movement if they turn out well. If you're experienced with this kind of thing and are willing to help us realize it, please <a href="contact.html">contact us</a>.</p>
+<a class="header" href="#contributing" id="contributing"><h1>Contributing</h1></a>
+<a class="header" href="#preface" id="preface"><h2>Preface</h2></a>
+<p>As stated in the foreword, the goal of this document is to be as unbiased as possible. That said, we'll probably be accepting most PRs for changes <em>that are reasonable</em>. If the general consensus of an Approved Change is &quot;that's absolutely ridiculous,&quot; it may be declined or removed later if it has been added already.</p>
+<a class="header" href="#some-rules" id="some-rules"><h2>Some Rules</h2></a>
+<p>Whether you want to contribute via PR or issue, there are some guidelines that should be followed:</p>
+<ul>
+<li>Don't use rude or abrasive language in any text you want to be added to the document.
+<ul>
+<li>If someone was asking you to make a change, how would you want them to ask?</li>
+</ul>
+</li>
+<li>Always search through existing issues and the current document before proposing a change.
+<ul>
+<li>We don't want a bunch of people making the same requests. If you find one that is very similar to yours, you might be better off just discussing the existing one and proposing some tweaks.</li>
+</ul>
+</li>
+<li>All PR/Issue titles must include the name of the item being changed, as it appears in game.
+<ul>
+<li>This is so it's easier to search through previous proposals and avoid making duplicates.</li>
+</ul>
+</li>
+<li>Currently, we're only dealing with existing items. We won't accept PRs about ideas for new unlocks. We also won't accept PRs about changes to things like gamemodes, maps, etc. (though we plan to do so later)</li>
+</ul>
+<a class="header" href="#proposing-a-new-idea" id="proposing-a-new-idea"><h2>Proposing a New Idea</h2></a>
+<p>If you've got an idea for balancing an existing item in the game, then follow the instructions below for <a href="#pull-requests">creating a Pull Request</a>.</p>
+<a class="header" href="#adding-feedback-to-an-existing-idea" id="adding-feedback-to-an-existing-idea"><h2>Adding Feedback to an Existing Idea</h2></a>
+<p>In the case that you want to provide feedback for an existing proposal, <strong>you should first check to see if an existing Pull Request or Issue Thread already exists for that proposal</strong>. If there is already an existing PR or Issue for the proposal you're interested in providing feedback for - then please continue to add discussion to that thread!</p>
+<p>However, if there is not an existing change, then go ahead and <a href="#pull-requests">create a Pull Request</a> or <a href="#issues">create an Issue</a> for the proposal you'd like to add feedback to.</p>
+<a class="header" href="#pull-requests" id="pull-requests"><h2>Pull Requests</h2></a>
+<p>This is the most helpful method of contributing as it means that we don't have to manually put your idea into the format of this document. However, it is not necessary. If you're not comfortable with making PRs, you can skip this section and read <a href="#issues">Issues</a>. Otherwise, it's best to be familiar with <a href="https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf">Github Markdown</a>.</p>
+<a class="header" href="#template" id="template"><h3>Template</h3></a>
+<p><strong>Always</strong> put your idea under the Disputed Changes section. The goal of this document is to get the attention of Valve, and the Approved Change section is reserved for changes that have been thoroughly reviewed and we definitely want to push for.</p>
+<p>There is a very particular format we're trying to adhere to, so when making PRs, please use the following template.</p>
+<p>If you're making a contribution to a file that is currently empty, copy the entire template.</p>
+<p>For item statistics, please use tables as shown in the template. If you're a bit lazy you can use this <a href="https://ozh.github.io/ascii-tables/">table generator</a>. Just make sure you have the output style set to Github Markdown.</p>
+<p>You also need to check if the page you're editing exists in <code>src/SUMMARY.md</code>. If it doesn't, add it in the appropriate location like so:</p>
+<pre><code class="language-markdown">[Chapter Title](relative/path/to/file.md)
+</code></pre>
+<p>Sub-chapters should be sorted alphabetically.</p>
+<p>It should be pretty straightforward based on the contents already in the file, but failing all else you can just open a PR without <code>SUMMARY.md</code> and we'll help you figure it out.</p>
+<p>If the file you're contributing to already has content, only copy the line containing <code>###Contributor</code> and all of the lines below it.</p>
+<p>You're also welcome to contribute additional information about the item's statistics, just include where you got that information from if it's not already cited.</p>
+<p>PR Template:</p>
+<pre><code class="language-markdown"># Item Name
+item's current statistics. grab any statistics you can find from the TF wiki, like so:
+| Damage                  |        |
+|-------------------------|-------:|
+| Type                    | Bullet |
+| Base (uncharged)        |     50 |
+| Crit (uncharged)        |    150 |
+| Mini-crit (uncharged)   |     68 |
+...etc
+your table doesn't have to look this nice, but it would be nice. it is much easier if you use a table generator like the one linked above
+
+*Source: [TF Wiki](url of that item's wiki page)*
+
+## Approved Change
+...
+
+## Disputed Change #x
+where x is the number of the previous change +1. obviously, first one is #1.
+
+### Changes from Stock
+any statistics that are different from the stock item that goes in this slot. NOT changes from the item's current state if it is non-stock.
+
+### Current Problems
+why you think the item needs to be changed
+
+### Explanation of Changes
+why you think your changes will benefit the game
+
+### Additional Comments
+this section is optional, it's just for information that doesn't fit anywhere else.
+
+*Contributors: username1, username2, etc.*
+replacing usernameX with the usernames of any people you want to credit for the idea, including yourself.
+</code></pre>
+<p>Once you've got this all filled out, it's good to run it through a <a href="https://jbt.github.io/markdown-editor/">markdown preview</a> to make sure there aren't any glaring formatting issues.</p>
+<a class="header" href="#issues" id="issues"><h2>Issues</h2></a>
+<p>If you're not comfortable with pull requests, that's fine. You can just <a href="https://github.com/balancetf/balancetf/issues/new/choose">open an issue</a> and fill out the template labeled &quot;New Change Proposal.&quot;</p>
+<a class="header" href="#frequently-asked-questions" id="frequently-asked-questions"><h1>Frequently Asked Questions</h1></a>
+<p>These are questions we think will be frequently asked, or are indeed asked often. Most of this information is available elsewhere in the book but may not be immediately apparent.</p>
+<p>If you don't see your question on here, drop us a line in <a href="https://discord.gg/7GmCDUP">the discord server</a>.</p>
+<a class="header" href="#how-does-a-proposal-become-approved" id="how-does-a-proposal-become-approved"><h2>How does a proposal become 'Approved'?</h2></a>
+<p>Approval happens when an existing Disputed Proposal is Championed for Approval. Proposal Champions are created by Maintainers of the repository, and are usually created based off of the popularity and stability of existing Disputed Proposal.</p>
+<p>When a Proposal Champion is created, the community will be asked to vote on the proposed change. If you want to vote on incoming Champions, then <a href="https://discord.gg/7GmCDUP">join the discord server where the polls take place</a>!</p>
+<a class="header" href="#how-do-i-propose-my-own-changes" id="how-do-i-propose-my-own-changes"><h2>How do I propose my own changes?</h2></a>
+<p>Check out our <a href="contributing.html">page on Contributing to the repository</a>. If you need help, then drop us a line in <a href="https://discord.gg/7GmCDUP">the discord server</a>.</p>
+<a class="header" href="#global-changes" id="global-changes"><h1>Global Changes</h1></a>
+<a class="header" href="#removal-of-random-spread" id="removal-of-random-spread"><h2>Removal of Random Spread</h2></a>
+<p>Every weapon that has any amount of random spread has it removed. This refers specifically to non-shotgun type weapons, as shotgun spread can already be disabled with the <code>tf_use_fixed_weaponspreads</code> cvar.</p>
+<p>Random spread creates 3 possible outcomes:</p>
+<ol>
+<li>A player should hit a shot, but random spread causes them to miss.</li>
+<li>A player should miss a shot, but random spread causes them to hit.</li>
+<li>The same result as if random spread didn't exist at all.</li>
+</ol>
+<p>Since the only results of random spread are either rewarding players for missing or punishing players for aiming well, let's just do away with it. However, this makes certain weapons become too powerful (e.g. the pistol). To counteract this, random spread will be replaced by harsher falloff, lower minimum damage values, or both.</p>
+<p>The following weapons would be affected by this change:</p>
+<ul>
+<li><a href="class/multiclass/items/pistol.html">Pistol</a></li>
+<li><a href="class/scout/items/winger.html">Winger</a></li>
+<li><a href="class/scout/items/pretty-boys-pocket-pistol.html">Pretty Boy's Pocket Pistol</a></li>
+<li><a href="class/sniper/items/huntsman.html">Huntsman</a></li>
+<li><a href="class/sniper/sniper.html#smgs">SMGs</a></li>
+<li><a href="class/demoman/demoman.html#grenade-launchers">Grenade Launchers</a></li>
+<li><a href="class/demoman/demoman.html#stickybomb-launchers">Stickybomb Launchers</a></li>
+<li><a href="class/spy/spy.html#revolvers">Revolvers</a></li>
+<li><a href="class/soldier/items/beggars-bazooka.html">Beggar's Bazooka</a></li>
+<li><a href="class/heavy/heavy.html#miniguns">Miniguns</a></li>
+</ul>
+<p>There are potentially more items to be added to this list. See <a href="contributing.html">Contributing</a>.</p>
+<a class="header" href="#classes" id="classes"><h1>Classes</h1></a>
+<ul>
+<li><a href="scout/scout.html">Scout</a></li>
+<li><a href="soldier/soldier.html">Soldier</a></li>
+<li><a href="pyro/pyro.html">Pyro</a></li>
+<li><a href="demoman/demoman.html">Demoman</a></li>
+<li><a href="engineer/engineer.html">Engineer</a></li>
+<li><a href="heavy/heavy.html">Heavy</a></li>
+<li><a href="medic/medic.html">Medic</a></li>
+<li><a href="sniper/sniper.html">Sniper</a></li>
+<li><a href="spy/spy.html">Spy</a></li>
+</ul>
+<a class="header" href="#scout" id="scout"><h1>Scout</h1></a>
+<table><thead><tr><th> Base Stats </th><th align="right">      </th></tr></thead><tbody>
+<tr><td> Move Speed </td><td align="right"> 133% </td></tr>
+<tr><td> Health     </td><td align="right">  125 </td></tr>
+</tbody></table>
+<a class="header" href="#scatterguns" id="scatterguns"><h2>Scatterguns</h2></a>
+<ul>
+<li><a href="items/scattergun.html">Scattergun</a></li>
+<li><a href="items/force-a-nature.html">Force-A-Nature</a></li>
+<li><a href="items/shortstop.html">Shortstop</a></li>
+<li><a href="items/soda-popper.html">Soda Popper</a></li>
+<li><a href="items/baby-faces-blaster.html">Baby Face's Blaster</a></li>
+<li><a href="items/back-scatter.html">Back Scatter</a></li>
+</ul>
+<a class="header" href="#pistols" id="pistols"><h2>Pistols</h2></a>
+<ul>
+<li><a href="../multiclass/items/pistol.html">Pistol</a></li>
+<li><a href="items/winger.html">Winger</a></li>
+<li><a href="items/pretty-boys-pocket-pistol.html">Pretty Boy's Pocket Pistol</a></li>
+</ul>
+<a class="header" href="#drinks" id="drinks"><h2>Drinks</h2></a>
+<ul>
+<li><a href="items/bonk-atomic-punch.html">Bonk! Atomic Punch</a></li>
+<li><a href="items/crit-a-cola.html">Crit-a-Cola</a></li>
+</ul>
+<a class="header" href="#throwables" id="throwables"><h2>Throwables</h2></a>
+<ul>
+<li><a href="items/flying-guillotine.html">Flying Guillotine</a></li>
+<li><a href="items/mad-milk.html">Mad Milk</a></li>
+</ul>
+<a class="header" href="#bats" id="bats"><h2>Bats</h2></a>
+<ul>
+<li><a href="items/bat.html">Bat</a></li>
+<li><a href="items/sandman.html">Sandman</a></li>
+<li><a href="items/candy-cane.html">Candy Cane</a></li>
+<li><a href="items/boston-basher.html">Boston Basher</a></li>
+<li><a href="items/sun-on-a-stick.html">Sun-on-a-Stick</a></li>
+<li><a href="items/fan-o-war.html">Fan o' War</a></li>
+<li><a href="items/atomizer.html">Atomizer</a></li>
+<li><a href="items/wrap-assassin.html">Wrap Assasin</a></li>
+</ul>
+<a class="header" href="#soldier" id="soldier"><h1>Soldier</h1></a>
+<table><thead><tr><th> Base Stats </th><th align="right">      </th></tr></thead><tbody>
+<tr><td> Move Speed </td><td align="right">  80% </td></tr>
+<tr><td> Health     </td><td align="right">  200 </td></tr>
+</tbody></table>
+<a class="header" href="#rocket-launchers" id="rocket-launchers"><h2>Rocket Launchers</h2></a>
+<ul>
+<li><a href="items/rocket-launcher.html">Rocket Launcher</a></li>
+<li><a href="items/original.html">Original</a></li>
+<li><a href="items/direct-hit.html">Direct Hit</a></li>
+<li><a href="items/black-box.html">Black Box</a></li>
+<li><a href="items/rocket-jumper.html">Rocket Jumper</a></li>
+<li><a href="items/liberty-launcher.html">Liberty Launcher</a></li>
+<li><a href="items/cow-mangler-5000.html">Cow Mangler 5000</a></li>
+<li><a href="items/beggars-bazooka.html">Beggar's Bazooka</a></li>
+<li><a href="items/air-strike.html">Air Strike</a></li>
+</ul>
+<a class="header" href="#shotguns" id="shotguns"><h2>Shotguns</h2></a>
+<ul>
+<li><a href="../multiclass/items/shotgun.html">Shotgun</a></li>
+<li><a href="../multiclass/items/reserve-shooter.html">Reserve Shooter</a></li>
+<li><a href="../multiclass/items/panic-attack.html">Panic Attack</a></li>
+<li><a href="items/righteous-bison.html">Righteous Bison</a></li>
+</ul>
+<a class="header" href="#boots" id="boots"><h2>Boots</h2></a>
+<ul>
+<li><a href="items/gunboats.html">Gunboats</a></li>
+<li><a href="items/mantreads.html">Mantreads</a></li>
+</ul>
+<a class="header" href="#banners" id="banners"><h2>Banners</h2></a>
+<ul>
+<li><a href="items/buff-banner.html">Buff Banner</a></li>
+<li><a href="items/battalions-backup.html">Battalion's Backup</a></li>
+<li><a href="items/concheror.html">Concheror</a></li>
+</ul>
+<a class="header" href="#backpacks" id="backpacks"><h2>Backpacks</h2></a>
+<ul>
+<li><a href="../multiclass/items/base-jumper.html">B.A.S.E Jumper</a></li>
+</ul>
+<a class="header" href="#melees" id="melees"><h2>Melees</h2></a>
+<ul>
+<li><a href="items/shovel.html">Shovel</a></li>
+<li><a href="items/equalizer.html">Equalizer</a></li>
+<li><a href="../multiclass/items/pain-train.html">Pain Train</a></li>
+<li><a href="../multiclass/items/half-zatoichi.html">Half Zatoichi</a></li>
+<li><a href="items/disciplinary-action.html">Disciplinary Action</a></li>
+<li><a href="items/market-gardener.html">Market Gardener</a></li>
+<li><a href="items/escape-plan.html">Escape Plan</a></li>
+</ul>
+<a class="header" href="#pyro" id="pyro"><h1>Pyro</h1></a>
+<table><thead><tr><th> Base Stats </th><th align="right">       </th></tr></thead><tbody>
+<tr><td> Move Speed </td><td align="right">  100% </td></tr>
+<tr><td> Health     </td><td align="right">  150  </td></tr>
+</tbody></table>
+<a class="header" href="#flamethrowers" id="flamethrowers"><h2>Flamethrowers</h2></a>
+<ul>
+<li><a href="items/flamethrower.html">Flamethrower</a></li>
+<li><a href="items/backburner.html">Backburner</a></li>
+<li><a href="items/degreaser.html">Degreaser</a></li>
+<li><a href="items/phlogistinator.html">Phlogistinator</a></li>
+<li><a href="items/dragons-fury.html">Dragon's Fury</a></li>
+</ul>
+<a class="header" href="#shotguns-1" id="shotguns-1"><h2>Shotguns</h2></a>
+<ul>
+<li><a href="../multiclass/items/shotgun.html">Shotgun</a></li>
+<li><a href="../multiclass/items/reserve-shooter.html">Reserve Shooter</a></li>
+<li><a href="../multiclass/items/panic-attack.html">Panic Attack</a></li>
+</ul>
+<a class="header" href="#flare-guns" id="flare-guns"><h2>Flare Guns</h2></a>
+<ul>
+<li><a href="items/flare-gun.html">Flare Gun</a></li>
+<li><a href="items/detonator.html">Detonator</a></li>
+<li><a href="items/manmelter.html">Manmelter</a></li>
+<li><a href="items/scorch-shot.html">Scorch Shot</a></li>
+</ul>
+<a class="header" href="#jetpacks" id="jetpacks"><h2>Jetpacks</h2></a>
+<ul>
+<li><a href="items/thermal-thruster.html">Thermal Thruster</a></li>
+</ul>
+<a class="header" href="#throwables-1" id="throwables-1"><h2>Throwables</h2></a>
+<ul>
+<li><a href="items/gas-passer.html">Gas Passer</a></li>
+</ul>
+<a class="header" href="#melees-1" id="melees-1"><h2>Melees</h2></a>
+<ul>
+<li><a href="items/fire-axe.html">Fire Axe</a></li>
+<li><a href="items/axtinguisher.html">Axtinguisher</a></li>
+<li><a href="items/homewrecker.html">Homewrecker</a></li>
+<li><a href="items/powerjack.html">Powerjack</a></li>
+<li><a href="items/back-scratcher.html">Back Scratcher</a></li>
+<li><a href="items/sharpened-volcano-fragment.html">Sharpened Volcano Fragment</a></li>
+<li><a href="items/third-degree.html">Third Degree</a></li>
+<li><a href="items/neon-annihilator.html">Neon Annihilator</a></li>
+<li><a href="items/hot-hand.html">Hot Hand</a></li>
+</ul>
+<a class="header" href="#demoman" id="demoman"><h1>Demoman</h1></a>
+<table><thead><tr><th> Base Stats </th><th align="right">      </th></tr></thead><tbody>
+<tr><td> Move Speed </td><td align="right">  93% </td></tr>
+<tr><td> Health     </td><td align="right">  175 </td></tr>
+</tbody></table>
+<a class="header" href="#grenade-launchers" id="grenade-launchers"><h2>Grenade Launchers</h2></a>
+<ul>
+<li><a href="items/grenade-launcher.html">Grenade Launcher</a></li>
+<li><a href="items/loch-n-load.html">Loch-n-Load</a></li>
+<li><a href="items/loose-cannon.html">Loose Cannon</a></li>
+<li><a href="items/iron-bomber.html">Iron Bomber</a></li>
+</ul>
+<a class="header" href="#stickybomb-launchers" id="stickybomb-launchers"><h2>Stickybomb Launchers</h2></a>
+<ul>
+<li><a href="items/stickybomb-launcher.html">Stickybomb Launcher</a></li>
+<li><a href="items/scottish-resistance.html">Scottish Resistance</a></li>
+<li><a href="items/sticky-jumper.html">Sticky Jumper</a></li>
+<li><a href="items/quickiebomb-launcher.html">Quickiebomb Launcher</a></li>
+</ul>
+<a class="header" href="#booties" id="booties"><h2>Booties</h2></a>
+<ul>
+<li><a href="items/ali-babas-wee-booties.html">Ali Baba's Wee Booties</a></li>
+</ul>
+<a class="header" href="#backpacks-1" id="backpacks-1"><h2>Backpacks</h2></a>
+<ul>
+<li><a href="../multiclass/items/base-jumper.html">B.A.S.E Jumper</a></li>
+</ul>
+<a class="header" href="#shields" id="shields"><h2>Shields</h2></a>
+<ul>
+<li><a href="items/chargin-targe.html">Chargin Targe</a></li>
+<li><a href="items/splendid-screen.html">Splendid Screen</a></li>
+<li><a href="items/tide-turner.html">Tide Turner</a></li>
+</ul>
+<a class="header" href="#bottles" id="bottles"><h2>Bottles</h2></a>
+<ul>
+<li><a href="items/bottle.html">Bottle</a></li>
+<li><a href="items/ullapool-caber.html">Ullapool Caber</a></li>
+</ul>
+<a class="header" href="#swords" id="swords"><h2>Swords</h2></a>
+<ul>
+<li><a href="items/eyelander.html">Eyelander</a></li>
+<li><a href="items/scotsmans-skullcutter.html">Scotsman's Skullcutter</a></li>
+<li><a href="items/claidheamh-mor.html">Claidheamh Mor</a></li>
+<li><a href="../multiclass/items/pain-train.html">Pain Train</a></li>
+<li><a href="../multiclass/items/half-zatoichi.html">Half-Zatoichi</a></li>
+<li><a href="items/persian-persuader.html">Persian Persuader</a></li>
+</ul>
+<a class="header" href="#scottish-resistance" id="scottish-resistance"><h1>Scottish Resistance</h1></a>
+<table><thead><tr><th>           Misc           </th><th align="right">            </th></tr></thead><tbody>
+<tr><td> Shot type                </td><td align="right"> Projectile </td></tr>
+<tr><td> Damage type              </td><td align="right"> Explosive  </td></tr>
+<tr><td> Ranged or Melee damage?  </td><td align="right"> Ranged     </td></tr>
+</tbody></table>
+<table><thead><tr><th>         Damage          </th><th>     </th></tr></thead><tbody>
+<tr><td> Maximum ramp-up (120%)  </td><td align="right"> 144 </td></tr>
+<tr><td> Base damage (100%)      </td><td align="right"> 120 </td></tr>
+<tr><td> Maximum fall-off (50%)  </td><td align="right">  60 </td></tr>
+<tr><td> Crit (6ft)              </td><td align="right"> 180 </td></tr>
+<tr><td> Crit (3ft)              </td><td align="right"> 261 </td></tr>
+<tr><td> Crit (&lt;3ft)             </td><td align="right"> 355 </td></tr>
+<tr><td> Mini-Crit (6ft)         </td><td align="right">  81 </td></tr>
+<tr><td> Mini-Crit (3ft)         </td><td align="right"> 117 </td></tr>
+<tr><td> Mini-Crit (&lt;3ft)        </td><td align="right"> 165 </td></tr>
+</tbody></table>
+<table><thead><tr><th>  Splash damage   </th><th>          </th></tr></thead><tbody>
+<tr><td> Minimum splash   </td><td align="right"> 9.1ft    </td></tr>
+<tr><td> Damage reduction </td><td align="right"> 1/2.92hu </td></tr>
+<tr><td> Self-damage      </td><td align="right"> 45-114   </td></tr>
+</tbody></table>
+<table><thead><tr><th>    Function times     </th><th>        </th></tr></thead><tbody>
+<tr><td> Attack interval       </td><td align="right"> 0.45 s </td></tr>
+<tr><td> Reload (first)        </td><td align="right"> 1.09 s </td></tr>
+<tr><td> Reload (consecutive)  </td><td align="right"> 0.67 s </td></tr>
+<tr><td> Activation time       </td><td align="right"> 1.72 s </td></tr>
+<tr><td> Maximum charge time   </td><td align="right"> 4.00 s </td></tr>
+</tbody></table>
+<p><em>Source: <a href="https://wiki.teamfortress.com/wiki/Scottish_Resistance">TF Wiki</a></em></p>
+<a class="header" href="#approved-change" id="approved-change"><h2>Approved Change</h2></a>
+<p>...</p>
+<a class="header" href="#disputed-change-1" id="disputed-change-1"><h2>Disputed Change #1</h2></a>
+<a class="header" href="#changes-from-stock" id="changes-from-stock"><h3>Changes from Stock</h3></a>
+<ul>
+<li>+25% faster firing speed</li>
+<li>+50% max secondary ammo</li>
+<li>+6 max stickies out</li>
+<li>Detonates stickybombs near the center of your crosshair</li>
+<li>-0.8 arm time</li>
+</ul>
+<a class="header" href="#current-problems" id="current-problems"><h3>Current Problems</h3></a>
+<p>At the current moment the Scottish Resistance is very keenly balanced to fill it's niche of being a dedicated area denial counter-part to the stock stickybomb launcher. Valve had added the ability of this weapon to detonate all stickies &quot;At your feet&quot; (in a radius around you) in order to assist sticky jumping. This mechanic makes setting up traps and being in the same room as your stickies a incredible hazard for accident death and makes the already high skill floor for this weapon even higher. Overall the mechanic does more harm than good.</p>
+<a class="header" href="#explanation-of-changes" id="explanation-of-changes"><h3>Explanation of Changes</h3></a>
+<p>The Scottish Resistance will now only detonate stickies you are looking at. The mechanic of proximity detonation is not nessesary for sticky jumping as, just like soldiers, the demo can look at the source of the explosion he wants to jump off of.</p>
+<a class="header" href="#additional-comments" id="additional-comments"><h3>Additional Comments</h3></a>
+<p>...</p>
+<p><em>Contributors: RibbonHeartU</em></p>
+<a class="header" href="#stickybomb-launcher" id="stickybomb-launcher"><h1>Stickybomb Launcher</h1></a>
+<table><thead><tr><th> Misc               </th><th align="right">            </th></tr></thead><tbody>
+<tr><td> Hitscan/Projectile </td><td align="right"> Projectile </td></tr>
+<tr><td> Ranged/Melee       </td><td align="right">     Ranged </td></tr>
+</tbody></table>
+<table><thead><tr><th> Damage                  </th><th>     </th></tr></thead><tbody>
+<tr><td> Maximum ramp-up         </td><td align="right"> 144 </td></tr>
+<tr><td> Base damage             </td><td align="right"> 120 </td></tr>
+<tr><td> Maximum fall-off        </td><td align="right">  60 </td></tr>
+<tr><td> Crit (96HU, 6ft)        </td><td align="right"> 180 </td></tr>
+<tr><td> Crit (48HU, 3ft)        </td><td align="right"> 261 </td></tr>
+<tr><td> Crit (&lt;48HU, 3ft)       </td><td align="right"> 355 </td></tr>
+<tr><td> Mini-Crit (96HU, 6ft)   </td><td align="right">  81 </td></tr>
+<tr><td> Mini-Crit (48HU, 3ft)   </td><td align="right"> 117 </td></tr>
+<tr><td> Mini-Crit (&lt;48HU, 3ft)  </td><td align="right"> 165 </td></tr>
+</tbody></table>
+<table><thead><tr><th>  Splash damage   </th><th>               </th></tr></thead><tbody>
+<tr><td> Minimum splash   </td><td align="right"> 146HU (9.1ft) </td></tr>
+<tr><td> Damage reduction </td><td align="right">      1/2.92HU </td></tr>
+<tr><td> Self-damage      </td><td align="right">        45-114 </td></tr>
+</tbody></table>
+<table><thead><tr><th>    Function times     </th><th>        </th></tr></thead><tbody>
+<tr><td> Attack interval       </td><td align="right">   0.6s </td></tr>
+<tr><td> Reload (first)        </td><td align="right">  1.09s </td></tr>
+<tr><td> Reload (consecutive)  </td><td align="right">  0.67s </td></tr>
+<tr><td> Activation time       </td><td align="right">   0.7s </td></tr>
+<tr><td> Maximum charge time   </td><td align="right">  4.00s </td></tr>
+</tbody></table>
+<table><thead><tr><th> Ammo        </th><th>        </th></tr></thead><tbody>
+<tr><td> Clip        </td><td align="right">      8 </td></tr>
+<tr><td> Carried     </td><td align="right">     24 </td></tr>
+<tr><td> Reload Type </td><td align="right"> Single </td></tr>
+</tbody></table>
+<p>Note: after a stickybomb has been out for 5 seconds, it is no longer affected by distance and will do its base damage.</p>
+<p><em>Sources: <a href="https://wiki.teamfortress.com/wiki/Stickybomb_Launcher">TF Wiki</a>, <a href="https://youtu.be/rUziaUJludw?t=708">Exany</a></em></p>
+<a class="header" href="#approved-change-1" id="approved-change-1"><h2>Approved Change</h2></a>
+<p>...</p>
+<a class="header" href="#disputed-change-1-1" id="disputed-change-1-1"><h2>Disputed Change #1</h2></a>
+<a class="header" href="#changes-from-stock-1" id="changes-from-stock-1"><h3>Changes from Stock</h3></a>
+<p>This is a stock item, so consider changes to be from the stats in the tables above.</p>
+<ul>
+<li>Random deviation is removed.
+<ul>
+<li>As this is a stock weapon, this change should affect all derivations of it (Scottish Resistance, Quickiebomb Launcher, Sticky Jumper).</li>
+</ul>
+</li>
+</ul>
+<a class="header" href="#current-problems-1" id="current-problems-1"><h3>Current Problems</h3></a>
+<p>The stickybomb launcher as it is is very balanced, the only problem is that it is not 100% predictable where stickies will land. The deviation is very slight, but it can become troublesome if the demoman is trying to conceal a sticky trap in a precise location.</p>
+<a class="header" href="#explanation-of-changes-1" id="explanation-of-changes-1"><h3>Explanation of Changes</h3></a>
+<p>With the removal of random deviation, there is no chance for a demoman to have his sticky traps exposed to the enemy just because of him being unlucky.</p>
+<a class="header" href="#additional-comments-1" id="additional-comments-1"><h3>Additional Comments</h3></a>
+<p>...</p>
+<p><em>Contributors: rrredface</em></p>
+<a class="header" href="#heavy" id="heavy"><h1>Heavy</h1></a>
+<table><thead><tr><th> Base Stats </th><th align="right">      </th></tr></thead><tbody>
+<tr><td> Move Speed </td><td align="right">  77% </td></tr>
+<tr><td> Health     </td><td align="right">  300 </td></tr>
+</tbody></table>
+<a class="header" href="#miniguns" id="miniguns"><h2>Miniguns</h2></a>
+<ul>
+<li><a href="items/minigun.html">Minigun</a></li>
+<li><a href="items/natascha.html">Natascha</a></li>
+<li><a href="items/brass-beast.html">Brass Beast</a></li>
+<li><a href="items/tomislav.html">Tomislav</a></li>
+<li><a href="items/huo-long-heater.html">Huo-Long Heater</a></li>
+</ul>
+<a class="header" href="#shotguns-2" id="shotguns-2"><h2>Shotguns</h2></a>
+<ul>
+<li><a href="../multiclass/items/shotgun.html">Shotgun</a></li>
+<li><a href="items/family-business.html">Family Business</a></li>
+<li><a href="../multiclass/items/panic-attack.html">Panic Attack</a></li>
+</ul>
+<a class="header" href="#lunchboxes" id="lunchboxes"><h2>Lunchboxes</h2></a>
+<ul>
+<li><a href="items/sandvich.html">Sandvich</a></li>
+<li><a href="items/dalokohs-bar.html">Dalokohs Bar</a></li>
+<li><a href="items/buffalo-steak-sandvich.html">Buffalo Steak Sandvich</a></li>
+<li><a href="items/second-banana.html">Second Banana</a></li>
+</ul>
+<a class="header" href="#fists" id="fists"><h2>Fists</h2></a>
+<ul>
+<li><a href="items/fists.html">Fists</a></li>
+<li><a href="items/killing-gloves-of-boxing.html">Killing Gloves of Boxing</a></li>
+<li><a href="items/gloves-of-running-urgently.html">Gloves of Running Urgently</a></li>
+<li><a href="items/warriors-spirit.html">Warrior's Spirit</a></li>
+<li><a href="items/fists-of-steel.html">Fists of Steel</a></li>
+<li><a href="items/eviction-notice.html">Eviction Notice</a></li>
+<li><a href="items/holiday-punch.html">Holiday Punch</a></li>
+</ul>
+<a class="header" href="#minigun" id="minigun"><h1>Minigun</h1></a>
+<table><thead><tr><th> Misc               </th><th align="right">         </th></tr></thead><tbody>
+<tr><td> Hitscan/Projectile </td><td align="right"> Hitscan </td></tr>
+<tr><td> Ranged/Melee       </td><td align="right">  Ranged </td></tr>
+<tr><td> Ammo Reserve       </td><td align="right">     200 </td></tr>
+<tr><td> Windup move speed  </td><td align="right">     47% </td></tr>
+</tbody></table>
+<table><thead><tr><th> Damage                  </th><th>                </th></tr></thead><tbody>
+<tr><td> Type                    </td><td align="right">         Bullet </td></tr>
+<tr><td> Max rampup (150%)       </td><td align="right">  13.5 / bullet </td></tr>
+<tr><td> Base damage (100%)      </td><td align="right">     9 / bullet </td></tr>
+<tr><td> Max falloff (50%)       </td><td align="right">   4.5 / bullet </td></tr>
+<tr><td> Crit                    </td><td align="right">    27 / bullet </td></tr>
+<tr><td> Mini-crit               </td><td align="right"> 12-18 / bullet </td></tr>
+</tbody></table>
+<table><thead><tr><th> Function Times          </th><th>                </th></tr></thead><tbody>
+<tr><td> Attack interval         </td><td align="right">    0.1 seconds </td></tr>
+<tr><td> Windup time             </td><td align="right">   0.87 seconds </td></tr>
+</tbody></table>
+<p><em>Source: <a href="https://wiki.teamfortress.com/wiki/Minigun">TF Wiki</a></em></p>
+<a class="header" href="#approved-change-2" id="approved-change-2"><h2>Approved Change</h2></a>
+<p>...</p>
+<a class="header" href="#disputed-change-1-2" id="disputed-change-1-2"><h2>Disputed Change #1</h2></a>
+<a class="header" href="#changes-from-stock-2" id="changes-from-stock-2"><h3>Changes from Stock</h3></a>
+<p>Completely replace the minigun with a Burstgun:</p>
+<ul>
+<li><strong>This weapon fires in bursts.</strong></li>
+</ul>
+<table><thead><tr><th> Misc               </th><th>         </th></tr></thead><tbody>
+<tr><td> Hitscan/Projectile </td><td align="right"> Hitscan </td></tr>
+<tr><td> Ranged/Melee       </td><td align="right">  Ranged </td></tr>
+<tr><td> Ammo per burst     </td><td align="right">       1 </td></tr>
+<tr><td> Bullets per burst  </td><td align="right">       4 </td></tr>
+<tr><td> Clip size          </td><td align="right">       6 </td></tr>
+<tr><td> Ammo reserve       </td><td align="right">      36 </td></tr>
+</tbody></table>
+<table><thead><tr><th> Damage                  </th><th>                </th></tr></thead><tbody>
+<tr><td> Type                    </td><td align="right">         Bullet </td></tr>
+<tr><td> Max rampup (150%)       </td><td align="right">  17.5 / bullet </td></tr>
+<tr><td> Base damage (100%)      </td><td align="right">    11 / bullet </td></tr>
+<tr><td> Max falloff (50%)       </td><td align="right">   5.5 / bullet </td></tr>
+<tr><td> Crit                    </td><td align="right">    33 / bullet </td></tr>
+</tbody></table>
+<table><thead><tr><th> Function Times          </th><th>                </th></tr></thead><tbody>
+<tr><td> Attack interval         </td><td align="right">    0.3 seconds </td></tr>
+<tr><td> Burst time              </td><td align="right">   0.45 seconds </td></tr>
+<tr><td> Reload (first)          </td><td align="right">   0.75 seconds </td></tr>
+<tr><td> Reload (consecutive)    </td><td align="right">   0.55 seconds </td></tr>
+</tbody></table>
+<p>Notes:
+Burst time is the amount of time that it takes for all bullets in a burst to be fired consecutively. Meaning that each bullet has an intermediate interval of <code>x ÷ n</code> where x is Burst time and n is the number of bullets fired.</p>
+<a class="header" href="#current-problems-2" id="current-problems-2"><h3>Current Problems</h3></a>
+<p>A lot of the skill involved in TF2 involves the complex and dynamic relationship between movement and aim. The Heavy is the only class that directly segregates these two features with the Windup mechanic on the Heavy's Minigun - from the time when windup starts to when the minigun is unwound, the player's movement speed is significantly slowed. The Minigun is also designed around random spread in order to reduce the effective range of the weapon, instead of relying on damage fall off and the player's ability to track when aiming.</p>
+<p>Overall it seems that the the Heavy is a complete contradiction to the design of the rest of the classes, as it pertains to movement.</p>
+<a class="header" href="#explanation-of-changes-2" id="explanation-of-changes-2"><h3>Explanation of Changes</h3></a>
+<p>Removing the decoupling between movement and fighting, by removing the wind up mechanic, should introduce a healthier relationship between movement and fighting for this class. The overall damage output of the class has been reduced significantly, but the opportunities where the class can output damage have been increased significantly. The weapon still shoots a stream of bullets, but only for a short period of time, and with a delay between each burst of bullets. This inherently rewards players who have good aim and can reliably track their targets.</p>
+<a class="header" href="#additional-comments-2" id="additional-comments-2"><h3>Additional Comments</h3></a>
+<p>Originally, when designing this weapon, there was an additional mechanic called &quot;Vulnerability&quot; which would replace the ramp-up/fall-off of the Burstgun. Instead, all players had &quot;Vulnerability&quot; stat which starts at 0.5 by default. Damage caused by the Burstgun would increase the player's vulnerability by a proportional amount, capping off at 1.5. Vulnerability decreases back down to 0.5 over time. The damage done to players by the Burstgun would be multiplied by the effected players Vulnerability before being applied to the player.</p>
+<p>I decided to scrap this mechanic. It was originally intended to further promote players who could track and aim effectively; but, in the end, I think it was too complicated and that a simpler solution was in order - which is what these changes are a conclusion to.</p>
+<p><em>Contributors: tristenmilk</em></p>
+<a class="header" href="#engineer" id="engineer"><h1>Engineer</h1></a>
+<table><thead><tr><th> Base Stats </th><th align="right">       </th></tr></thead><tbody>
+<tr><td> Move Speed </td><td align="right">  100% </td></tr>
+<tr><td> Health     </td><td align="right">  125  </td></tr>
+</tbody></table>
+<a class="header" href="#shotguns-3" id="shotguns-3"><h2>Shotguns</h2></a>
+<ul>
+<li><a href="../multiclass/items/shotgun.html">Shotgun</a></li>
+<li><a href="items/frontier-justice.html">Frontier Justice</a></li>
+<li><a href="items/widowmaker.html">Widowmaker</a></li>
+<li><a href="items/pomson-6000.html">Pomson 6000</a></li>
+<li><a href="items/rescue-ranger.html">Rescue Ranger</a></li>
+<li><a href="../multiclass/items/panic-attack.html">Panic Attack</a></li>
+</ul>
+<a class="header" href="#pistols-1" id="pistols-1"><h2>Pistols</h2></a>
+<ul>
+<li><a href="../multiclass/items/pistol.html">Pistol</a></li>
+<li><a href="items/wrangler.html">Wrangler</a></li>
+<li><a href="items/short-circuit.html">Short Circuit</a></li>
+</ul>
+<a class="header" href="#wrenches" id="wrenches"><h2>Wrenches</h2></a>
+<ul>
+<li><a href="items/wrench.html">Wrench</a></li>
+<li><a href="items/gunslinger.html">Gunslinger</a></li>
+<li><a href="items/southern-hospitality.html">Southern Hospitality</a></li>
+<li><a href="items/jag.html">Jag</a></li>
+<li><a href="items/eureka-effect.html">Eureaka Effect</a></li>
+</ul>
+<a class="header" href="#pdas" id="pdas"><h2>PDAs</h2></a>
+<ul>
+<li><a href="items/pda.html">PDA</a></li>
+</ul>
+<a class="header" href="#medic" id="medic"><h1>Medic</h1></a>
+<table><thead><tr><th> Base Stats </th><th align="right">       </th></tr></thead><tbody>
+<tr><td> Move Speed </td><td align="right">  107% </td></tr>
+<tr><td> Health     </td><td align="right">  150  </td></tr>
+</tbody></table>
+<a class="header" href="#syringe-guns" id="syringe-guns"><h2>Syringe Guns</h2></a>
+<ul>
+<li><a href="items/syringe-gun.html">Syringe Gun</a></li>
+<li><a href="items/blutsauger.html">Blutsauger</a></li>
+<li><a href="items/overdose.html">Overdose</a></li>
+</ul>
+<a class="header" href="#crossbows" id="crossbows"><h2>Crossbows</h2></a>
+<ul>
+<li><a href="items/crusaders.crossbow.html">Crusader's Crossbow</a></li>
+</ul>
+<a class="header" href="#medi-guns" id="medi-guns"><h2>Medi Guns</h2></a>
+<ul>
+<li><a href="items/medi-gun.html">Medi Gun</a></li>
+<li><a href="items/kritzkrieg.html">Kritzkrieg</a></li>
+<li><a href="items/quick-fix.html">Quick-Fix</a></li>
+<li><a href="items/vaccinator.html">Vaccinator</a></li>
+</ul>
+<a class="header" href="#bonesaws" id="bonesaws"><h2>Bonesaws</h2></a>
+<ul>
+<li><a href="items/bonesaw.html">Bonesaw</a></li>
+<li><a href="items/ubersaw.html">Ubersaw</a></li>
+<li><a href="items/vita-saw.html">Vita-saw</a></li>
+<li><a href="items/amputator.html">Amputator</a></li>
+<li><a href="items/solemn-vow.html">Solemn Vow</a></li>
+</ul>
+<a class="header" href="#blutsauger" id="blutsauger"><h1>Blutsauger</h1></a>
+<table><thead><tr><th> Misc               </th><th align="right">            </th></tr></thead><tbody>
+<tr><td> Hitscan/Projectile </td><td align="right"> Projectile </td></tr>
+<tr><td> Ranged/Melee       </td><td align="right">     Ranged </td></tr>
+</tbody></table>
+<table><thead><tr><th> Damage      </th><th>        </th></tr></thead><tbody>
+<tr><td> Type        </td><td align="right"> Bullet </td></tr>
+<tr><td> Base        </td><td align="right">     10 </td></tr>
+<tr><td> Max ramp-up </td><td align="right">     12 </td></tr>
+<tr><td> Max falloff </td><td align="right">      5 </td></tr>
+<tr><td> Crit        </td><td align="right">     30 </td></tr>
+<tr><td> Mini-crit   </td><td align="right">  14-16 </td></tr>
+</tbody></table>
+<table><thead><tr><th> Function Times  </th><th>      </th></tr></thead><tbody>
+<tr><td> Attack Interval </td><td align="right"> 0.1s </td></tr>
+<tr><td> Reload Time     </td><td align="right"> 1.6s </td></tr>
+</tbody></table>
+<table><thead><tr><th> Ammo        </th><th>      </th></tr></thead><tbody>
+<tr><td> Clip        </td><td align="right">   40 </td></tr>
+<tr><td> Carried     </td><td align="right">  150 </td></tr>
+<tr><td> Reload Type </td><td align="right"> Clip </td></tr>
+</tbody></table>
+<p><em>Source: <a href="https://wiki.teamfortress.com/wiki/Blutsauger">TF Wiki</a></em></p>
+<a class="header" href="#approved-change-3" id="approved-change-3"><h2>Approved Change</h2></a>
+<p>...</p>
+<a class="header" href="#disputed-change-1-3" id="disputed-change-1-3"><h2>Disputed Change #1</h2></a>
+<a class="header" href="#changes-from-stock-3" id="changes-from-stock-3"><h3>Changes from Stock</h3></a>
+<ul>
+<li>Syringes heal teammates at a rate of 2 health per syringe (max 20 health/s)
+<ul>
+<li>Healing done with this weapon is returned to the medic at half the rate. So for every 20 health given to teammates, the medic gets 10 in return.</li>
+<li>Does not overheal the patient or the medic.</li>
+<li>Does not build ubercharge.</li>
+</ul>
+</li>
+</ul>
+<a class="header" href="#current-problems-3" id="current-problems-3"><h3>Current Problems</h3></a>
+<p>Currently, the blutsauger is simply not good enough. It passively drains the user's health by 2 per second and the positive side of the weapon (currently heals for 3 HP when hitting an enemy) requires the medic to stop healing his team. Because of the passive HP drain, he'd have to stop healing his team quite often to survive, or steal a large amount of health packs, which is a huge disadvantage.</p>
+<a class="header" href="#explanation-of-changes-3" id="explanation-of-changes-3"><h3>Explanation of Changes</h3></a>
+<p>By eliminating the passive health degeneration and moving the healing mechanic to one that encourages healing teammates, the medic can now take advantage of this weapon's upside without letting his teammates die. It doesn't have the burst healing potential of the currently most used item in its slot, the Crusader's Crossbow, but it trades this off for the ability to sustain the medic's own life.</p>
+<a class="header" href="#additional-comments-3" id="additional-comments-3"><h3>Additional Comments</h3></a>
+<p>This change is best looked at in context with our proposed changes to the <a href="syringe-gun.html#disputed-change-1">Syringe Gun</a> and <a href="crusaders-crossbow.html#disputed-change-1">Crusader's Crossbow</a> as well. They are designed to be balanced around each other.</p>
+<p><em>Contributors: rrredface, tristenmilk, RibbonHeartU</em></p>
+<a class="header" href="#crusaders-crossbow" id="crusaders-crossbow"><h1>Crusader's Crossbow</h1></a>
+<table><thead><tr><th> Misc               </th><th align="right">            </th></tr></thead><tbody>
+<tr><td> Hitscan/Projectile </td><td align="right"> Projectile </td></tr>
+<tr><td> Ranged/Melee       </td><td align="right">     Ranged </td></tr>
+</tbody></table>
+<table><thead><tr><th> Damage      </th><th>         </th></tr></thead><tbody>
+<tr><td> Type        </td><td align="right">  Bullet </td></tr>
+<tr><td> Base*      </td><td align="right">   38-75 </td></tr>
+<tr><td> Crit*      </td><td align="right"> 113-225 </td></tr>
+<tr><td> Mini-crit* </td><td align="right">  51-101 </td></tr>
+</tbody></table>
+<table><thead><tr><th> Healing   </th><th>         </th></tr></thead><tbody>
+<tr><td> Amount*  </td><td align="right">  75-150 </td></tr>
+</tbody></table>
+<table><thead><tr><th> Function Times        </th><th>           </th></tr></thead><tbody>
+<tr><td> Reload Time           </td><td align="right">      1.6s </td></tr>
+<tr><td> Charge Build Rate** </td><td align="right"> 16-48HP/% </td></tr>
+</tbody></table>
+<table><thead><tr><th> Ammo        </th><th>        </th></tr></thead><tbody>
+<tr><td> Clip        </td><td align="right">      1 </td></tr>
+<tr><td> Carried     </td><td align="right">     38 </td></tr>
+<tr><td> Reload Type </td><td align="right"> Single </td></tr>
+</tbody></table>
+<p>* - Damage/healing scales with distance. Values are from point blank to maximum scaling respectively.</p>
+<p>** - Values are for patients out of combat and in combat respectively.</p>
+<p><em>Source: <a href="https://wiki.teamfortress.com/wiki/Crusader%27s_Crossbow">TF Wiki</a></em></p>
+<a class="header" href="#approved-change-4" id="approved-change-4"><h2>Approved Change</h2></a>
+<p>...</p>
+<a class="header" href="#disputed-change-1-4" id="disputed-change-1-4"><h2>Disputed Change #1</h2></a>
+<a class="header" href="#changes-from-stock-4" id="changes-from-stock-4"><h3>Changes from Stock</h3></a>
+<ul>
+<li>Fires a single arrow instead of syringes.
+<ul>
+<li>Reload time is 2 seconds.</li>
+<li>Heals teammates for 60 health at point blank, and up to 120 health at max range. This puts healing rate at 30HP/s at point blank, and 60HP/s at max range.</li>
+<li>Builds ubercharge at a rate of 1% per 48 HP in combat, 1% per 16 HP out of combat.</li>
+<li>Damage to enemies scales with distance, from a minimum of 20 to a maximum of 40.</li>
+</ul>
+</li>
+</ul>
+<a class="header" href="#current-problems-4" id="current-problems-4"><h3>Current Problems</h3></a>
+<p>Currently, the Crusader's Crossbow is simply the best item in its slot. Nothing matches its burst healing potential of an obscene 93.75HP/s at maximum range and its ability to build ubercharge. Since the medic's role is to heal, and not to do damage, it stands to reason that the medic should not be able to do 75 instant damage at long range.</p>
+<a class="header" href="#explanation-of-changes-4" id="explanation-of-changes-4"><h3>Explanation of Changes</h3></a>
+<p>Increasing the reload time from 1.6s to 2s makes the high healing per second of the Crusader's Crossbow easier to counter with high amounts of burst damage. Even still, that puts its max heal rate at 75HP/s which is still higher than the stock medi gun at maximum crit heals. Reducing its maximum healing per arrow puts healing per second at 60HP/s, which is much more sane and possible to fight against. Maximum damage is reduced to 40 to reduce the effectiveness of spam arrows.</p>
+<a class="header" href="#additional-comments-4" id="additional-comments-4"><h3>Additional Comments</h3></a>
+<p>This change is best looked at in context with our proposed changes to the <a href="blutsauger.html#disputed-change-1">Blutsauger</a> and <a href="syringe-gun.html#disputed-change-1">Syringe Gun</a> as well. They are designed to be balanced around each other.</p>
+<p><em>Contributors: rrredface, tristenmilk, RibbonHeartU</em></p>
+<a class="header" href="#syringe-gun" id="syringe-gun"><h1>Syringe Gun</h1></a>
+<table><thead><tr><th> Misc               </th><th align="right">            </th></tr></thead><tbody>
+<tr><td> Hitscan/Projectile </td><td align="right"> Projectile </td></tr>
+<tr><td> Ranged/Melee       </td><td align="right">     Ranged </td></tr>
+</tbody></table>
+<table><thead><tr><th> Damage      </th><th>        </th></tr></thead><tbody>
+<tr><td> Type        </td><td align="right"> Bullet </td></tr>
+<tr><td> Base        </td><td align="right">     10 </td></tr>
+<tr><td> Max ramp-up </td><td align="right">     12 </td></tr>
+<tr><td> Max falloff </td><td align="right">      5 </td></tr>
+<tr><td> Crit        </td><td align="right">     30 </td></tr>
+<tr><td> Mini-crit   </td><td align="right">  14-16 </td></tr>
+</tbody></table>
+<table><thead><tr><th> Function Times  </th><th>      </th></tr></thead><tbody>
+<tr><td> Attack Interval </td><td align="right"> 0.1s </td></tr>
+<tr><td> Reload Time     </td><td align="right"> 1.6s </td></tr>
+</tbody></table>
+<table><thead><tr><th> Ammo        </th><th>      </th></tr></thead><tbody>
+<tr><td> Clip        </td><td align="right">   40 </td></tr>
+<tr><td> Carried     </td><td align="right">  150 </td></tr>
+<tr><td> Reload Type </td><td align="right"> Clip </td></tr>
+</tbody></table>
+<p><em>Source: <a href="https://wiki.teamfortress.com/wiki/Syringe_Gun">TF Wiki</a></em></p>
+<a class="header" href="#approved-change-5" id="approved-change-5"><h2>Approved Change</h2></a>
+<p>...</p>
+<a class="header" href="#disputed-change-1-5" id="disputed-change-1-5"><h2>Disputed Change #1</h2></a>
+<a class="header" href="#changes-from-stock-5" id="changes-from-stock-5"><h3>Changes from Stock</h3></a>
+<p>This is a stock weapon, so consider these to be changes from the stats in the tables above.</p>
+<ul>
+<li>Syringes heal teammates at a rate of 4 health per syringe (max 40 health/s)
+<ul>
+<li>Does not overheal.</li>
+<li>Does not build ubercharge.</li>
+</ul>
+</li>
+</ul>
+<a class="header" href="#current-problems-5" id="current-problems-5"><h3>Current Problems</h3></a>
+<p>The Syringe Gun is currently used extremely rarely because it doesn't have high (or any) healing potential like the Crusader's Crossbow. Its damage is relatively okay, but doing damage is not the medic's role.</p>
+<a class="header" href="#explanation-of-changes-5" id="explanation-of-changes-5"><h3>Explanation of Changes</h3></a>
+<p>Allowing the Syringe Gun to heal at 40 health/s gives it the use of quickly topping up a hurt teammate, even in combat, at a rate faster than medi guns. This comes with the tradeoff of it not building ubercharge.</p>
+<a class="header" href="#additional-comments-5" id="additional-comments-5"><h3>Additional Comments</h3></a>
+<p>This change is best looked at in context with our proposed changes to the <a href="blutsauger.html#disputed-change-1">Blutsauger</a> and <a href="crusaders-crossbow.html#disputed-change-1">Crusader's Crossbow</a> as well. They are designed to be balanced around each other.</p>
+<p><em>Contributors: rrredface, tristenmilk, RibbonHeartU</em></p>
+<a class="header" href="#vaccinator" id="vaccinator"><h1>Vaccinator</h1></a>
+<table><thead><tr><th> Healing                </th><th align="right">      </th></tr></thead><tbody>
+<tr><td> In combat              </td><td align="right"> 24/s </td></tr>
+<tr><td> Out of combat          </td><td align="right"> 72/s </td></tr>
+<tr><td> Overheal in combat     </td><td align="right">  8/s </td></tr>
+<tr><td> Overheal out of combat </td><td align="right"> 24/s </td></tr>
+</tbody></table>
+<table><thead><tr><th> Function Times        </th><th>                         </th></tr></thead><tbody>
+<tr><td> Charge Duration       </td><td align="right">                    2.5s </td></tr>
+<tr><td> Charge Speed*        </td><td align="right"> 4.175%/s, 2.8%/s 1.4%/s </td></tr>
+<tr><td> Time to Charge*      </td><td align="right">           24s, 36s, 72s </td></tr>
+<tr><td> Beam Connect Range    </td><td align="right">                  432 HU </td></tr>
+<tr><td> Beam Disconnect Range </td><td align="right">                  528 HU </td></tr>
+</tbody></table>
+<p><em>Source: <a href="https://wiki.teamfortress.com/wiki/Vaccinator">TF Wiki</a></em></p>
+<a class="header" href="#approved-change-6" id="approved-change-6"><h2>Approved Change</h2></a>
+<p>...</p>
+<a class="header" href="#disputed-change-1-6" id="disputed-change-1-6"><h2>Disputed Change #1</h2></a>
+<a class="header" href="#changes-from-stock-6" id="changes-from-stock-6"><h3>Changes from Stock</h3></a>
+<ul>
+<li>Ubercharge lasts 50% longer (12s maximum)</li>
+<li>Medic can switch between 3 resistance types (explosive, bullet, fire)
+<ul>
+<li>These have no effect when not ubercharged.</li>
+</ul>
+</li>
+<li>During Ubercharge, the medic and his patient are not invulnerable to all damage. Instead, they are invulnerable only to the selected damage type.
+<ul>
+<li>The medic can switch the resistance type during charge, which reduces the charge duration by 3s.</li>
+</ul>
+</li>
+</ul>
+<a class="header" href="#current-problems-6" id="current-problems-6"><h3>Current Problems</h3></a>
+<p>Currently, the Vaccinator builds at an obscenely fast rate compared to the stock Medi Gun (60% maximum charge time of stock if building at max rate.) This is made worse by the fact that it builds while charges are being deployed, and the medic only needs 25% charge to deploy it. A full meter of ubercharge will also provide 2 more seconds of charge than stock. As a result of these factors, this makes dying as a Vaccinator medic significantly less important than with all other medi guns. Fighting against a Vaccinator medic tends to be incredibly frustrating as it only takes 6 seconds to build enough to deploy another charge, assuming max build rate.</p>
+<a class="header" href="#explanation-of-changes-6" id="explanation-of-changes-6"><h3>Explanation of Changes</h3></a>
+<p>With these changes, the medic's life is once again valuable and dying comes with harsher consequences, putting it more inline with other medi guns. Only being invulnerable to one damage type at a time would encourage teams to have a solid plan before executing a push since they can take advantage of a lengthy uber by isolating and removing sources of damage other than the one they're immune to first.</p>
+<a class="header" href="#additional-comments-6" id="additional-comments-6"><h3>Additional Comments</h3></a>
+<p>The fact that ubercharge is shortened by swapping of resistances means that the current system of swapping resistances (reload key) would not suffice. The medic would need to be able to cycle both forward and backwards, so some kind of different control scheme would be necessary.</p>
+<p><em>Contributors: rrredface</em></p>
+<a class="header" href="#sniper" id="sniper"><h1>Sniper</h1></a>
+<table><thead><tr><th> Base Stats </th><th align="right">      </th></tr></thead><tbody>
+<tr><td> Move Speed </td><td align="right"> 100% </td></tr>
+<tr><td> Health     </td><td align="right">  125 </td></tr>
+</tbody></table>
+<a class="header" href="#sniper-rifles" id="sniper-rifles"><h2>Sniper Rifles</h2></a>
+<ul>
+<li><a href="items/sniper-rifle.html">Sniper Rifle</a></li>
+<li><a href="items/sydney-sleeper.html">Sydney Sleeper</a></li>
+<li><a href="items/bazaar-bargain.html">Bazaar Bargain</a></li>
+<li><a href="items/machina.html">Machina</a></li>
+<li><a href="items/hitmans-heatmaker.html">Hitman's Heatmaker</a></li>
+<li><a href="items/classic.html">Classic</a></li>
+</ul>
+<a class="header" href="#bows" id="bows"><h2>Bows</h2></a>
+<ul>
+<li><a href="items/huntsman.html">Huntsman</a></li>
+</ul>
+<a class="header" href="#smgs" id="smgs"><h2>SMGs</h2></a>
+<ul>
+<li><a href="items/smg.html">SMG</a></li>
+<li><a href="items/cleaners-carbine.html">Cleaner's Carbine</a></li>
+</ul>
+<a class="header" href="#throwables-2" id="throwables-2"><h2>Throwables</h2></a>
+<ul>
+<li><a href="items/jarate.html">Jarate</a></li>
+</ul>
+<a class="header" href="#backpacks-2" id="backpacks-2"><h2>Backpacks</h2></a>
+<ul>
+<li><a href="items/razorback.html">Razorback</a></li>
+<li><a href="items/darwins-danger-shield.html">Darwin's Danger Shield</a></li>
+<li><a href="items/cozy-camper.html">Cozy Camper</a></li>
+</ul>
+<a class="header" href="#kukris" id="kukris"><h2>Kukris</h2></a>
+<ul>
+<li><a href="items/kukri.html">Kukri</a></li>
+<li><a href="items/tribalmans-shiv.html">Tribalman's Shiv</a></li>
+<li><a href="items/bushwacka.html">Bushwacka</a></li>
+<li><a href="items/shahanshah.html">Shahanshah</a></li>
+</ul>
+<a class="header" href="#sydney-sleeper" id="sydney-sleeper"><h1>Sydney Sleeper</h1></a>
+<table><thead><tr><th> Misc               </th><th align="right">         </th></tr></thead><tbody>
+<tr><td> Hitscan/Projectile </td><td align="right"> Hitscan </td></tr>
+<tr><td> Ranged/Melee       </td><td align="right">  Ranged </td></tr>
+<tr><td> Effect             </td><td align="right">  Jarate </td></tr>
+</tbody></table>
+<table><thead><tr><th> Damage                  </th><th>        </th></tr></thead><tbody>
+<tr><td> Type                    </td><td align="right"> Bullet </td></tr>
+<tr><td> Base (uncharged)        </td><td align="right">     50 </td></tr>
+<tr><td> Crit (uncharged)        </td><td align="right">    150 </td></tr>
+<tr><td> Mini-crit (uncharged)   </td><td align="right">     68 </td></tr>
+<tr><td> Base (full charge)      </td><td align="right">    150 </td></tr>
+<tr><td> Crit (full charge)      </td><td align="right">    450 </td></tr>
+<tr><td> Mini-crit (full charge) </td><td align="right">    203 </td></tr>
+</tbody></table>
+<table><thead><tr><th> Function Times                </th><th>      </th></tr></thead><tbody>
+<tr><td> Attack Interval               </td><td align="right"> 1.5s </td></tr>
+<tr><td> Effect Duration (uncharged)   </td><td align="right">   2s </td></tr>
+<tr><td> Effect Duration (full charge) </td><td align="right">   8s </td></tr>
+<tr><td> Time to fully charge          </td><td align="right"> 2.8s </td></tr>
+<tr><td> Zoom-in Charge Delay          </td><td align="right"> 1.3s </td></tr>
+</tbody></table>
+<table><thead><tr><th> Ammo        </th><th>      </th></tr></thead><tbody>
+<tr><td> Carried     </td><td align="right">   25 </td></tr>
+<tr><td> Reload Type </td><td align="right"> None </td></tr>
+</tbody></table>
+<p><em>Source: <a href="https://wiki.teamfortress.com/wiki/Sydney_Sleeper">TF Wiki</a></em></p>
+<a class="header" href="#approved-change-7" id="approved-change-7"><h2>Approved Change</h2></a>
+<p>...</p>
+<a class="header" href="#disputed-change-1-7" id="disputed-change-1-7"><h2>Disputed Change #1</h2></a>
+<a class="header" href="#changes-from-stock-7" id="changes-from-stock-7"><h4>Changes from Stock</h4></a>
+<ul>
+<li>This weapon cannot charge.</li>
+<li>Headshotting enemies will build up a meter that allows the sniper to shoot his teammates to heal them.
+<ul>
+<li>This meter has a maximum value of 300.</li>
+<li>Damage dealt by headshots is returned as meter. For example, a 140 damage headshot will return 140 meter.</li>
+<li>Teammates are healed for half the damage a shot would do to an enemy. This means headshotting teammates heals them faster.</li>
+<li>Healing teammates depletes meter equal to the amount of health healed.</li>
+<li>This cannot overheal teammates.</li>
+</ul>
+</li>
+</ul>
+<a class="header" href="#current-problems-7" id="current-problems-7"><h4>Current Problems</h4></a>
+<p>Currently, I feel it's too easy to be effective with the Sydney Sleeper without hitting headshots because of the weapon's increased charge rate compared to stock and its jarate effect. Additionally, because it applies jarate, it allows the sniper to stand outside the effective range of other classes and effectively increase the effective range of his own teammates, as mini-crits ignore damage falloff. As a result, I feel it's too easy for a sniper to do 150 damage without any potential for retaliation, and also make it significantly more difficult to escape after the damage is done.</p>
+<a class="header" href="#explanation-of-changes-7" id="explanation-of-changes-7"><h4>Explanation of Changes</h4></a>
+<p>The goal of this change is more to make the sniper class as a whole more interesting, rather than specifically the Sydney Sleeper. The meter for headshots mechanic rewards skilled players, and allows the sniper to have a purpose beyond getting one or two picks and letting his team push off of them. His ability to heal teammates would allow him to effectively participate in pushes initiated by the picks he gets.</p>
+<p>Assuming a base damage of 50, and an attack interval of 1.5s, the sniper could heal teammates at about 16HP/second with bodyshots. Due to the 0.2 second delay between scoping and being able to headshot, the potential healing rate with headshots would be about 44HP/second.</p>
+<p>The meter cap of 300 is to ensure that the sniper still has to hit headshots to consistently put out healing.</p>
+<a class="header" href="#additional-comments-7" id="additional-comments-7"><h4>Additional Comments</h4></a>
+<p>During some discussion of this idea, it was brought up that it might be quite annoying to be fighting a player who gets unexpectedly healed for up to 75 HP by a sniper during a fight. I don't think this is a major issue, however, as it would be very easy to keep track of exactly how much meter the sniper has, since it's very easy to keep track of when an enemy sniper hits headshots. Therefore you can be prepared for anyone you're fighting to be healed.</p>
+<p><em>Contributors: rrredface</em></p>
+<a class="header" href="#spy" id="spy"><h1>Spy</h1></a>
+<table><thead><tr><th> Base Stats </th><th align="right">      </th></tr></thead><tbody>
+<tr><td> Move Speed </td><td align="right"> 107% </td></tr>
+<tr><td> Health     </td><td align="right">  125 </td></tr>
+</tbody></table>
+<a class="header" href="#revolvers" id="revolvers"><h2>Revolvers</h2></a>
+<ul>
+<li><a href="items/revolver.html">Revolver</a></li>
+<li><a href="items/ambassador.html">Ambassador</a></li>
+<li><a href="items/letranger.html">L'Etranger</a></li>
+<li><a href="items/enforcer.html">Enforcer</a></li>
+<li><a href="items/diamondback.html">Diamondback</a></li>
+</ul>
+<a class="header" href="#knives" id="knives"><h2>Knives</h2></a>
+<ul>
+<li><a href="items/knife.html">Knife</a></li>
+<li><a href="items/your-eternal-reward.html">Your Eternal Reward</a></li>
+<li><a href="items/connivers-kunai.html">Conniver's Kunai</a></li>
+<li><a href="items/big-earner.html">Big Earner</a></li>
+<li><a href="items/spy-cicle.html">Spy-cicle</a></li>
+</ul>
+<a class="header" href="#kits" id="kits"><h2>Kits</h2></a>
+<ul>
+<li><a href="items/disguise-kit.html">Disguise Kit</a></li>
+</ul>
+<a class="header" href="#watches" id="watches"><h2>Watches</h2></a>
+<ul>
+<li><a href="items/invis-watch.html">Invis Watch</a></li>
+<li><a href="items/cloak-and-dagger.html">Cloak and Dagger</a></li>
+<li><a href="items/dead-ringer.html">Dead Ringer</a></li>
+</ul>
+<a class="header" href="#sappers" id="sappers"><h2>Sappers</h2></a>
+<ul>
+<li><a href="items/sapper.html">Sapper</a></li>
+<li><a href="items/red-tape-recorder.html">Red-Tape Recorder</a></li>
+</ul>
+<a class="header" href="#multiclass" id="multiclass"><h1>Multiclass</h1></a>
+<ul>
+<li><a href="items/base-jumper.html">B.A.S.E Jumper</a></li>
+<li><a href="items/half-zatoichi.html">Half Zatoichi</a></li>
+<li><a href="items/pain-train.html">Pain Train</a></li>
+<li><a href="items/panic-attack.html">Panic Attack</a></li>
+<li><a href="items/pistol.html">Pistol</a></li>
+<li><a href="items/reserve-shooter.html">Reserve Shooter</a></li>
+<li><a href="items/shotgun.html">Shotgun</a></li>
+</ul>
+<a class="header" href="#pistol" id="pistol"><h1>Pistol</h1></a>
+<table><thead><tr><th> Misc               </th><th align="right">                          </th></tr></thead><tbody>
+<tr><td> Hitscan/Projectile </td><td align="right"> Hitscan                  </td></tr>
+<tr><td> Ranged/Melee       </td><td align="right"> Ranged                   </td></tr>
+<tr><td> Magazine Size      </td><td align="right"> 12                       </td></tr>
+<tr><td> Reserve Ammo       </td><td align="right"> Scout: 36, Engineer: 200 </td></tr>
+<tr><td> Reload Type        </td><td align="right"> Magazine                 </td></tr>
+</tbody></table>
+<table><thead><tr><th> Damage    </th><th>        </th></tr></thead><tbody>
+<tr><td> Type      </td><td align="right"> Bullet </td></tr>
+<tr><td> Base      </td><td align="right"> 15     </td></tr>
+<tr><td> Maximum   </td><td align="right"> 22     </td></tr>
+<tr><td> Minimum   </td><td align="right"> 8      </td></tr>
+<tr><td> Crit      </td><td align="right"> 45     </td></tr>
+<tr><td> Mini-crit </td><td align="right"> 20-30  </td></tr>
+</tbody></table>
+<table><thead><tr><th> Function Times       </th><th>                               </th></tr></thead><tbody>
+<tr><td> Attack Interval      </td><td align="right">                         0.17s </td></tr>
+<tr><td> Reload Time          </td><td align="right"> Scout: 1.25s, Engineer: 1.36s </td></tr>
+<tr><td> Spread Recovery Time </td><td align="right">                         1.25s </td></tr>
+</tbody></table>
+<p><em>Source: <a href="https://wiki.teamfortress.com/wiki/Pistol">TF Wiki</a></em></p>
+<a class="header" href="#approved-change-8" id="approved-change-8"><h2>Approved Change</h2></a>
+<p>...</p>
+<a class="header" href="#disputed-change-1-8" id="disputed-change-1-8"><h2>Disputed Change #1</h2></a>
+<a class="header" href="#changes-from-stock-8" id="changes-from-stock-8"><h3>Changes from Stock</h3></a>
+<p>This is a stock weapon, so all changes will be differences from its current state (written Sep 18, 2018.)</p>
+<ul>
+<li>Reload speed is consistent between classes
+<ul>
+<li>The result is the engineer having the scout's current reload time of 1.25s.</li>
+</ul>
+</li>
+<li>Reserve ammo is consistent across classes
+<ul>
+<li>The result is the engineer having the scout's current reserve ammo of 36.</li>
+</ul>
+</li>
+<li>Random spread is removed</li>
+<li>Minimum damage is 4 (down from 8)</li>
+</ul>
+<a class="header" href="#current-problems-8" id="current-problems-8"><h3>Current Problems</h3></a>
+<p>In its current state, the Pistol is quite balanced. The problem is the fact that hitting shots from any distance other than point blank is very dependent on luck.</p>
+<a class="header" href="#explanation-of-changes-8" id="explanation-of-changes-8"><h3>Explanation of Changes</h3></a>
+<p>As explained in the global changes section, random spread will either punish a player for aiming well, or reward a player for not aiming well enough. By removing random spread, this is no longer true. The Pistol's minimum damage is reduced to half of its current value to prevent it from being too destructive from long ranges, since it would have perfect accuracy.</p>
+<a class="header" href="#additional-comments-8" id="additional-comments-8"><h3>Additional Comments</h3></a>
+<p>...</p>
+<p><em>Contributors: rrredface</em></p>
+<a class="header" href="#contact-info" id="contact-info"><h1>Contact Info</h1></a>
+<a class="header" href="#discord" id="discord"><h2>Discord</h2></a>
+<p>We have a server where we handle discussion on item proposals with the community and certain keynote members of the community.</p>
+<p>If you want to be apart of the discussion, then <a href="https://discord.gg/7GmCDUP">check it out</a>.</p>
+<a class="header" href="#maintainers" id="maintainers"><h2>Maintainers</h2></a>
+<a class="header" href="#tristenmilk" id="tristenmilk"><h3>TristenMilk</h3></a>
+<ul>
+<li>email: <a href="mailto:tristen@tristenhorton.com">tristen@tristenhorton.com</a></li>
+<li>steam: <a href="https://steamcommunity.com/id/tristenmilk">steamcommunity.com/id/tristenmilk</a></li>
+<li>discord: TristenMilk#0001</li>
+</ul>
+<a class="header" href="#rrredface" id="rrredface"><h3>rrredface</h3></a>
+<ul>
+<li>steam: <a href="https://steamcommunity.com/id/bananabrrred/">steamcommunity.com/id/bananabrrred</a></li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+        <script type="text/javascript" src="custom.js"></script>
+        
+
+        
+        
+        <script type="text/javascript">
+        window.addEventListener('load', function() {
+            window.setTimeout(window.print, 100);
+        });
+        </script>
+        
+        
+
+    </body>
+</html>
