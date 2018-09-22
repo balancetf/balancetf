@@ -21,5 +21,6 @@ deploy:
   github-token: $GITHUB_TOKEN
   local-dir: docs/
   keep-history: false
+  fqdn: balance.tf
   on:
     branch: master
