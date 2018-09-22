@@ -14,6 +14,7 @@
         - [Stickybomb Launcher](class/demoman/items/stickybomb-launcher.md)
     - [Heavy](class/heavy/heavy.md)
         - [Minigun](class/heavy/items/minigun.md)
+        - [Sandvich](class/heavy/items/sandvich.md)
     - [Engineer](class/engineer/engineer.md)
     - [Medic](class/medic/medic.md)
         - [Blutsauger](class/medic/items/blutsauger.md)
