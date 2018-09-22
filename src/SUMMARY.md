@@ -13,6 +13,7 @@
         - [Scottish Resistance](class/demoman/items/scottish-resistance.md)
         - [Stickybomb Launcher](class/demoman/items/stickybomb-launcher.md)
     - [Heavy](class/heavy/heavy.md)
+        - [Dalokohs Bar](class/heavy/items/dalokohs-bar.md)
         - [Minigun](class/heavy/items/minigun.md)
     - [Engineer](class/engineer/engineer.md)
     - [Medic](class/medic/medic.md)
