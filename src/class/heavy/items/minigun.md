@@ -79,7 +79,7 @@ I decided to scrap this mechanic. It was originally intended to further promote 
 ## Disputed Change #2
 
 ### Changes from Stock
-* This weapon shoots 3 bullets per ammo
+* This weapon shoots 3 bullets per ammo all at once, in a fixed-equilateral-triangle spread
 * Movement speed while spun is 170hu/s (56%)
 
 |           Misc           |         |
