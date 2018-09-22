@@ -74,3 +74,43 @@ Originally, when designing this weapon, there was an additional mechanic called 
 I decided to scrap this mechanic. It was originally intended to further promote players who could track and aim effectively; but, in the end, I think it was too complicated and that a simpler solution was in order - which is what these changes are a conclusion to.
 
 *Contributors: tristenmilk*
+
+
+## Disputed Change #2
+
+### Changes from Stock
+* This weapon shoots 3 bullets per ammo
+* Movement speed while spun is 170hu/s (56%)
+
+|           Misc           |         |
+|--------------------------|--------:|
+| Shot type                | Hitscan |
+| Damage type              | Bullet  |
+| Ranged or Melee damage?  | Ranged  |
+
+|       Damage       |                                |
+|--------------------|-------------------------------:|
+| Max ramp-up (150%) | 12/bullet                      |
+| Base damage (100%) | 8/bullet                       |
+| Max fall-off (50%) | 4/bullet                       |
+| Point blank        | ~36/ammo; ~360 damage/s        |
+| Medium range       | ~16-24/ammo; ~160-240 damage/s |
+| Long range         | ~4-8/ammo; ~40-80 damage/s     |
+| Crit               | 24/bullet                      |
+| Mini-crit          | 11-16/bullet                   |
+
+| Function times  |      |
+|-----------------|-----:|
+| Attack interval | 0.1s |
+| Windup time     | 0.4s |
+
+### Current Problems
+Heavy's low mobility and inconsistent damage makes him uninteresting to fight and play aginast. This combination forces heavy to be almost entirely based on positioning as to not be invalidated entirely as a class by splash damage and superior mobility. Such sluggish mobility and a reliance on positioning makes heavy's effectiveness be limited to areas where he has lots of time to get into position and setup, but without the guarenteed damage and utility that engineer has.
+
+### Explanation of Changes
+To address heavy's mobility, the windup and winddown time for minigun usage will be reduced drastically, allowing him to move more fluidly in and out of combat while still keeping his need for atleast some preparation and counter-play. He will also move faster while spun; at 56% speed up from 37% speed. This speed boost is to allow heavy to better use his awareness to dodge threats. The second issue to be addressed is the randomness in his damage output. Pre-change heavy did shoot multiple bullets for each ammo consumed, but the spread was chaotic. This new minigun will shoot 3 bullets simultaneously and in a fixed triangular spread, similar to a shotgun. In addition he will incur no accuracy ramp-up as to not punish heavy players for trying to stay mobile.
+
+### Additional Comments
+Although I believe this change is for the better, it may further invalidate the use of secondary shotguns on heavy. I believe this problem needs addressed anyway, whether or not this minigun design gets used.
+
+*Contributors: RibbonHeartU*
