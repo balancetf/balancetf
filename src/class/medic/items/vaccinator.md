@@ -27,7 +27,7 @@
 * Medic can switch between 3 resistance types (explosive, bullet, fire)
     * These have no effect when not ubercharged.
 * During Ubercharge, the medic and his patient are not invulnerable to all damage. Instead, they are invulnerable only to the selected damage type.
-    * The medic can switch the resistance type during charge, which reduces the charge duration by 3s.
+    * The medic can switch the resistance type during charge, which reduces the charge duration by 1s.
 
 ### Current Problems
 Currently, the Vaccinator builds at an obscenely fast rate compared to the stock Medi Gun (60% maximum charge time of stock if building at max rate.) This is made worse by the fact that it builds while charges are being deployed, and the medic only needs 25% charge to deploy it. A full meter of ubercharge will also provide 2 more seconds of charge than stock. As a result of these factors, this makes dying as a Vaccinator medic significantly less important than with all other medi guns. Fighting against a Vaccinator medic tends to be incredibly frustrating as it only takes 6 seconds to build enough to deploy another charge, assuming max build rate.
