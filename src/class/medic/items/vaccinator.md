@@ -15,6 +15,8 @@
 | Beam Connect Range    |                  432 HU |
 | Beam Disconnect Range |                  528 HU |
 
+\* - Below 100% HP, below 142.5% HP and above 142.5% HP respectively.
+
 *Source: [TF Wiki](https://wiki.teamfortress.com/wiki/Vaccinator)*
 
 ## Approved Change
