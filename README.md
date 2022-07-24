@@ -32,8 +32,4 @@ Something we'd really like is to turn the changes proposed in this book into a p
 
 [Discord](https://discord.gg/7GmCDUP)
 
-Steam: [TristenMilk](https://steamcommunity.com/id/TristenMilk) [rrredface](https://steamcommunity.com/id/bananabrrred)
-
-Email: tristen@tristenhorton.com
-
 [Github Issue](https://github.com/balancetf/balancetf/issues/new)
