@@ -73,7 +73,7 @@ Originally, when designing this weapon, there was an additional mechanic called 
 
 I decided to scrap this mechanic. It was originally intended to further promote players who could track and aim effectively; but, in the end, I think it was too complicated and that a simpler solution was in order - which is what these changes are a conclusion to.
 
-*Contributors: tristenmilk*
+*Contributors: dresswithpockets*
 
 
 ## Disputed Change #2
